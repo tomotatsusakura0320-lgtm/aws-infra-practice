@@ -8,7 +8,7 @@
 
 ## 構成図
 
-![構成図](AWS-Practice-5.drawio)
+![構成図](AWS-Practice-01.png)
 
 ---
 
