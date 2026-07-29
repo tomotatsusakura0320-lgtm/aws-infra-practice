@@ -22,7 +22,14 @@ ap-northeast-1aにパブリックサブネット(10.0.0.0/24)とプライベー�
 
 ![VPC作成](./images/01-web-lab-igw.png)
 
-インターネットゲートウェイを作成し、VPC(wev-lab-vpc)にアタッチした。
+インターネットゲートウェイを作成し、VPC(web-lab-vpc)にアタッチした。
+
+---
+## NATゲートウェイ作成
+
+![VPC作成](./images/01-web-lab-natgw.png)
+
+NATゲートウェイを作成した。
 
 ---
 ## ルートテーブル作成
@@ -36,7 +43,16 @@ ap-northeast-1aにパブリックサブネット(10.0.0.0/24)とプライベー�
 
 プライベートサブネット用ルートテーブルを2つ作成し、2つのプライベートサブネット(web-lab-private-subnet-aとweb-lab-private-subnet-c)それぞれに関連付けた。
 
+---
+##　セキュリティグループ作成
 
+![VPC作成](./images/01-web-lab-alb-sg.png)
+![VPC作成](./images/01-web-lab-alg-sg-1.png)
 
+alb用セキュリティグループを作成した。
 
+![VPC作成](./images/01-web-lab-web-sg.png)
+![VPC作成](./images/01-web-lab-web-sg-1.png)
+
+webサーバ用セキュリティグループを作成した。
 
