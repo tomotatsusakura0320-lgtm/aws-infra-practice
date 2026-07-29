@@ -41,6 +41,5 @@ Systems Manager Session Manager(SSM)を利用して管理を行いました。
 10. nginxインストール・動作確認
 11. CloudWatch Agentインストール・設定
 12. CloudWatch Logs・Metrics確認
-13. S3へログ保存設定
-14. ブラウザから動作確認
-15. リソース削除
+13. ブラウザから動作確認
+14. リソース削除
