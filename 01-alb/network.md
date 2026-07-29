@@ -43,7 +43,16 @@ NATゲートウェイを作成した。
 
 プライベートサブネット用ルートテーブルを2つ作成し、2つのプライベートサブネット(web-lab-private-subnet-aとweb-lab-private-subnet-c)それぞれに関連付けた。
 
+---
+##　セキュリティグループ作成
 
+![VPC作成](./images/01-web-lab-alb-sg.png)
+![VPC作成](./images/01-web-lab-alg-sg-1.png)
 
+alb用セキュリティグループを作成した。
 
+![VPC作成](./images/01-web-lab-web-sg.png)
+![VPC作成](./images/01-web-lab-web-sg-1.png)
+
+webサーバ用セキュリティグループを作成した。
 
