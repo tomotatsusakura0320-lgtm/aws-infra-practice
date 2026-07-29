@@ -8,7 +8,6 @@ Application Load Balancer(ALB)を経由してブラウザからアクセスで�
 
 また、EC2はプライベートサブネットに配置し、
 Systems Manager Session Manager(SSM)を利用して管理を行いました。
----
 
 ## 構成図
 
