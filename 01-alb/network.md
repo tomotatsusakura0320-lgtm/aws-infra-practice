@@ -22,7 +22,14 @@ ap-northeast-1aにパブリックサブネット(10.0.0.0/24)とプライベー�
 
 ![VPC作成](./images/01-web-lab-igw.png)
 
-インターネットゲートウェイを作成し、VPC(wev-lab-vpc)にアタッチした。
+インターネットゲートウェイを作成し、VPC(web-lab-vpc)にアタッチした。
+
+---
+## NATゲートウェイ作成
+
+![VPC作成](./images/01-web-lab-natgw.png)
+
+NATゲートウェイを作成した。
 
 ---
 ## ルートテーブル作成
