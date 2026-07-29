@@ -26,3 +26,18 @@ Systems Manager Session Manager(SSM)を利用して管理を行いました。
 - Session Manager
 
 ---
+
+## 構築手順
+
+1. VPC作成
+2. Public / Private Subnet作成
+3. Internet Gateway設定
+4. NAT Gateway作成
+5. Route Table設定
+6. EC2作成
+7. IAM Role設定
+8. SSM接続確認
+9. nginxインストール
+10. ALB作成
+11. Target Group登録
+12. 動作確認
