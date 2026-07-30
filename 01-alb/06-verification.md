@@ -18,6 +18,6 @@
 ## 動作確認
 
 ![nginxトップページ](./images/01-nginx-top-a.png)
-![nginxトップページ](./images/01-nginx-top-a.png)
+![nginxトップページ](./images/01-nginx-top-c.png)
 
 ブラウザからアクセスし、インスタンスが切り替わるかを確認しました。
