@@ -19,6 +19,21 @@ sudo systemctl enable amazon-cloudwatch-agent
 アップデートを確認した後、nginxとCloudwatchAgentをインストール、起動し、自動起動を有効化しました。
 
 ---
+## CloudwatchAgent 設定
+
+```bash
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard
+
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
+-a fetch-config \
+-m ec2 \
+-c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json \
+-s
+```
+ウィザードを実行し、監視するメトリクスやログ収集の設定を行いました。
+その後、作成した設定ファイルを読み込み、CloudWatch Agentを起動しました。
+
+---
 ## nginx,CloudwatchAgent 起動確認
 
 ![systemctl staus nginx(a)画面](./images/01-systemctl-status-nginx-a.png)
