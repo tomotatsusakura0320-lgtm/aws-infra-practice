@@ -2,7 +2,7 @@
 
 ![IAMロール設定](./images/01-web-lab-web-ec2-role.png)
 
-IAMロールを作成し、許可ポリシーとして、AmazonSSMManagedInstanceCore と CloudWatchAgentServerPolicy を付与した。
+IAMロールを作成し、許可ポリシーとして、AmazonSSMManagedInstanceCore と CloudWatchAgentServerPolicy を付与しました。
 
 ---
 ## EC2インスタンス作成
@@ -11,4 +11,5 @@ IAMロールを作成し、許可ポリシーとして、AmazonSSMManagedInstanc
 
 ![EC2設定](./images/01-web-lab-web-ec2-c.png)
 
-可用性を考慮し、異なるAZに配置した2つのプライベートサブネットへWebサーバ用EC2インスタンスをそれぞれ作成した。両インスタンスには、SSM接続およびCloudWatch Agent利用のため、作成済みのIAMロール web-lab-web-ec2-role を設定した。
+可用性を考慮し、異なるAZに配置した2つのプライベートサブネットへWebサーバ用EC2インスタンスをそれぞれ作成しました。
+両インスタンスには、SSM接続およびCloudWatch Agent利用のため、作成済みのIAMロール web-lab-web-ec2-role を設定しました。
