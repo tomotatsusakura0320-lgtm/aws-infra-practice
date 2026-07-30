@@ -29,6 +29,10 @@ systemctl status nginx
 ```
 nginxの起動と自動起動の有効化を確認しました。
 
+---
+![systemctl staus amazon-cloudwatch-agent(a)画面](./01-systemctl-status-amazon-cloudwatch-agent-a)
+![systemctl staus amazon-cloudwatch-agent(c)画面](./01-systemctl-status-amazon-cloudwatch-agent-c)
+
 ```bash
 systemctl status amazon-cloudwatch-agent
 ```
