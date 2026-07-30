@@ -5,7 +5,6 @@ SSMを使用してec2インスタンス(web-lab-web-ec2-a/web-lab-web-ec2-c)に�
 ---
 ## nginx,cloudwatchagent インストール
 
-アップデートを確認した後、nginx,cloudwatchagentをインストール、起動し、自動起動を有効化した。
 ```bash
 sudo dnf update -y
 
@@ -17,9 +16,13 @@ sudo systemctl install amazon-cloudwatch-agent -y
 sudo systemctl start amazon-cloudwatch-agent
 sudo systemctl enable amazon-cloudwatch-agent
 ```
+アップデートを確認した後、nginx,cloudwatchagentをインストール、起動し、自動起動を有効化した。
 
 ---
 ## nginx,cloudwatchagent 起動確認
+
+![systemctl staus nginx(a)画面](./01-web-lab-web-ec2-a-nginx)
+![systemctl staus nginx(c)画面](./01-web-lab-web-ec2-c-nginx)
 
 ```bash
 systemctl status nginx
