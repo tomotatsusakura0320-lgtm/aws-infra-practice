@@ -28,9 +28,10 @@ ap-northeast-1aにパブリックサブネット(10.0.0.0/24)とプライベー�
 ---
 ## NATゲートウェイ作成
 
-![NATゲートウェイ設定](./images/01-web-lab-natgw.png)
+![NATゲートウェイ設定](./images/01-web-lab-natgw-a.png)
+![NATゲートウェイ設定](./images/01-web-lab-natgw-c.png)
 
-NATゲートウェイを作成しました。
+2つのパブリックサブネットそれぞれにNATゲートウェイを作成し、ElasticIPを割り当てました。
 
 ---
 ## ルートテーブル作成
