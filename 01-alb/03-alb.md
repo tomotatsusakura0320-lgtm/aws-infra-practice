@@ -1,6 +1,6 @@
 ## ALB作成
 
-![ALB設定](./01-web-lab-alb-1.png)
+![ALB設定](./images/01-web-lab-alb.png)
 ![ALB設定](./01-web-lab-alb-1.png)
 
 ALBを作成し、2つのリージョンにあるec2インスタンスで負荷分散ができるようにしました。
