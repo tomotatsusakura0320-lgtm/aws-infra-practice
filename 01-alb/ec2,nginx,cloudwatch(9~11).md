@@ -21,8 +21,8 @@ sudo systemctl enable amazon-cloudwatch-agent
 ---
 ## nginx,cloudwatchagent 起動確認
 
-![systemctl staus nginx(a)画面](./01-web-lab-web-ec2-a-nginx)
-![systemctl staus nginx(c)画面](./01-web-lab-web-ec2-c-nginx)
+![systemctl staus nginx(a)画面](./01-systemctl-status-nginx-a)
+![systemctl staus nginx(c)画面](./01-systemctl-status-nginx-c)
 
 ```bash
 systemctl status nginx
