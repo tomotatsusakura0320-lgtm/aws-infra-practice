@@ -12,6 +12,7 @@ VPC(10.0.0.0/26)を作成しました。
 
 ap-northeast-1aにパブリックサブネット(10.0.0.0/24)とプライベートサブネット(10.0.1.0/24)を作成しました。
 
+---
 ![サブネット設定](./images/01-web-lab-public-subnet-c.png)
 ![サブネット設定](./images/01-web-lab-private-subnet-c.png)
 
