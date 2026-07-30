@@ -8,11 +8,11 @@ SSMを使用してec2インスタンス(web-lab-web-ec2-a/web-lab-web-ec2-c)に�
 ```bash
 sudo dnf update -y
 
-sudo systemctl install nginx -y
+sudo dnf install nginx -y
 sudo systemctl start nginx
 sudo systemctl enable nginx
 
-sudo systemctl install amazon-cloudwatch-agent -y
+sudo dnf install amazon-cloudwatch-agent -y
 sudo systemctl start amazon-cloudwatch-agent
 sudo systemctl enable amazon-cloudwatch-agent
 ```
