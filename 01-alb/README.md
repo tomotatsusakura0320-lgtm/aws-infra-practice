@@ -29,7 +29,7 @@ Systems Manager Session Manager(SSM)を利用して管理を行いました。
 
 ## 構築手順
 
-1. VPC・Subnet作成
+1. VPC・Subnet作成(network(1~5).md)
 2. Internet Gateway作成
 3. NAT Gateway作成
 4. Route Table設定
