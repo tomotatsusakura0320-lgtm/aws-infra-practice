@@ -39,6 +39,7 @@ NATゲートウェイを作成しました。
 
 パブリックサブネット用ルートテーブルを１つ作成し、2つのパブリックサブネット(web-lab-public-subnet-aとweb-lab-public-subnet-c)に関連付けました。
 
+---
 ![ルートテーブル設定](./images/01-web-lab-private-rt-a.png)
 ![ルートテーブル設定](./images/01-web-lab-private-rt-c.png)
 
@@ -52,8 +53,9 @@ NATゲートウェイを作成しました。
 
 alb用セキュリティグループを作成し、HTTP(80)とHTTPS(443)を許可しました。
 
+---
 ![セキュリティグループ設定](./images/01-web-lab-web-sg.png)
 ![セキュリティグループ設定](./images/01-web-lab-web-sg-1.png)
 
-webサーバ用セキュリティグループを作成し、HTTP(80)とHTTPS(443)はalb用セキュリティグループからのみ許可した、
+webサーバ用セキュリティグループを作成し、HTTP(80)とHTTPS(443)はalb用セキュリティグループからのみ許可しました。
 
