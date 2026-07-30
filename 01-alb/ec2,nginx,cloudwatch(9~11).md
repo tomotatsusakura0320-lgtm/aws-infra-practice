@@ -32,5 +32,5 @@ nginxの起動と自動起動の有効化を確認しました。
 ```bash
 systemctl status amazon-cloudwatch-agent
 ```
-cloudwatchagentの起動と自動起動の有効化を確認しました。
+CloudwatchAgentの起動と自動起動の有効化を確認しました。
 
