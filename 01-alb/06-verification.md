@@ -1,15 +1,23 @@
 ## nginxトップページ変更
+
 変更前(共通）
-![nginxトップページ設定画面](./01-systemctl-status-nginx)
+
+![nginxトップページ設定画面](./images/01-nginx-top-before.png)
+
 変更後(web-lab-web-ec2-a)
-![nginxトップページ設定画面(a)](./01-systemctl-status-nginx-a)
+
+![nginxトップページ設定画面](./images/01-nginx-top-after-a.png)
+
 変更後(web-lab-web-ec2-c)
-![nginxトップページ設定画面(c)](./01-systemctl-status-nginx-c)
+
+![nginxトップページ設定画面](./images/01-nginx-top-after-c.png)
+
 ブラウザからalbによる負荷分散が行われているか確認ができるように、nginxのトップページを変更しました。
 
 
 ## 動作確認
 
-![nginxトップ(a)画面](./01-browser-nginx-top-a)
-![nginxトップ(c)画面](./01-browser-nginx-top-c)
+![nginxトップページ](./images/01-nginx-top-a.png)
+![nginxトップページ](./images/01-nginx-top-c.png)
+
 ブラウザからアクセスし、インスタンスが切り替わるかを確認しました。
