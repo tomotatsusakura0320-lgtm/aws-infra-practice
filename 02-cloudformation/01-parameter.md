@@ -1,7 +1,8 @@
 ## パラメータストアに設定保存
 
-![パラメータ](./images/02-parameter-1.png) 
+パラメータストア/web-lab/cloudwatch-agent/config に、CloudwatchAgentの設定を保存しました。
 
+---
 設定値
 ```json
 {
