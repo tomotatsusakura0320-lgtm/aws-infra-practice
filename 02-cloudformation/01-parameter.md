@@ -18,15 +18,13 @@
                                                 "file_path": "/var/log/nginx/access.log",
                                                 "log_group_class": "STANDARD",
                                                 "log_group_name": "/aws/ec2/nginx/access",
-                                                "log_stream_name": "{instance_id}",
-                                                "retention_in_days": 7
+                                                "log_stream_name": "{instance_id}"
                                         },
                                         {
                                                 "file_path": "/var/log/nginx/error.log",
                                                 "log_group_class": "STANDARD",
                                                 "log_group_name": "/aws/ec2/nginx/error",
-                                                "log_stream_name": "{instance_id}",
-                                                "retention_in_days": 7
+                                                "log_stream_name": "{instance_id}"
                                         }
                                 ]
                         }
