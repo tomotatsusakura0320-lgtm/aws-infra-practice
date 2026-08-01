@@ -3,7 +3,7 @@
 パラメータストア/web-lab/cloudwatch-agent/config に、CloudwatchAgentの設定を保存しました。
 
 ---
-設定値
+設定
 ```json
 {
         "agent": {
@@ -89,4 +89,3 @@
 }
 ```
 
-パラメータストアにCloudwatchAgentの設定を保存しました。
