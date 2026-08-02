@@ -13,17 +13,6 @@ Systems Manager Session Manager(SSM)を利用して管理を行いました。
 
 ![構成図](./images/AWS-Practice-01.png)
 
----
-
-## システム構成
-
-- VPC
-- Public Subnet ×2
-- Private Subnet ×2
-- ALB
-- EC2 ×2
-- NAT Gateway ×2
-- Session Manager
 
 ---
 
