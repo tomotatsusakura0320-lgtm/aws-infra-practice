@@ -1,6 +1,6 @@
-## パラメータストアにCloudwatchAgentの設定を保存
+## Parameter StoreにCloudWatch Agentの設定を保存
 
-パラメータストア/web-lab/cloudwatch-agent/config に、CloudwatchAgentの設定を保存しました。
+Parameter Storeのパラメータ /web-lab/cloudwatch-agent/config に、CloudWatch Agentの設定ファイルを保存しました。
 
 ---
 設定
@@ -86,5 +86,8 @@
         }
 }
 ```
+---
+## S3にWebコンテンツを保存
 
-## s3バケットにnginxの
+S3バケットにNginxのトップページとなるindex.htmlを保存しました。
+EC2起動時にUserDataからS3上のindex.htmlを取得し、Nginxのドキュメントルートへ配置します。
