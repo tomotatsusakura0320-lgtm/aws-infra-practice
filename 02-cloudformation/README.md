@@ -11,8 +11,8 @@ VPC、サブネット、ルートテーブル、NAT Gateway、Application Load B
 CloudWatch Agentの設定はSystems Manager Parameter Storeから取得し、WebコンテンツはAmazon S3から取得することで、設定やコンテンツをCloudFormationテンプレートから分離しています。
 
 ## 構築手順
-01. CloudFormationテンプレート作成
-02. 事前準備（Parameter Store・S3など）
-03. CloudFormationデプロイ
-04. 動作確認
-05. リソース削除
+
+- [01. 事前準備](01-prerequisites.md)
+- [02. CloudFormationテンプレート](02-cloudformation-template.md)
+- [03. デプロイ・動作確認](03-deploy-verification.md)
+- [04. リソース削除](04-cleanup.md)
