@@ -1,4 +1,4 @@
-## CloudWatch 確認
+## CloudWatch確認
 
 ![アクセスロググループ](./images/01-access-log-group.png)
 ロググループ /aws/ec2/nginx/access に2つのec2インスタンスのログストリームが存在することを確認しました。
