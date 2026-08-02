@@ -46,6 +46,7 @@ systemctl status nginx
 systemctl status amazon-cloudwatch-agent
 ```
 web-lab-web-ec2-cで、NginxとCloudwatch Agentの起動と自動起動の有効化を確認しました。
+
 ---
 ![systemctl staus (c)画面](./images/01-systemctl-status-c.png)
 ```bash
