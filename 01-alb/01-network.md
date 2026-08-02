@@ -1,6 +1,6 @@
 ## VPC作成
 
-VPC(10.0.0.0/26)を作成しました。
+VPC`web-lab-vpc`を作成しました。
 
 ![VPC設定](./images/01-web-lab-vpc.png)
 
