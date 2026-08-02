@@ -39,17 +39,18 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
 
 web-lab-web-ec2-aで、NginxとCloudwatch Agentの起動と自動起動の有効化を確認しました。
 
-![systemctl staus (a)画面](./images/01-systemctl-status-a.png)
-
 ```bash
 systemctl status nginx
 systemctl status amazon-cloudwatch-agent
 ```
+![systemctl staus (a)画面](./images/01-systemctl-status-a.png)
+
 ---
 web-lab-web-ec2-cで、NginxとCloudwatch Agentの起動と自動起動の有効化を確認しました。
 
-![systemctl staus (c)画面](./images/01-systemctl-status-c.png)
 ```bash
 systemctl status nginx
 systemctl status amazon-cloudwatch-agent
 ```
+![systemctl staus (c)画面](./images/01-systemctl-status-c.png)
+
