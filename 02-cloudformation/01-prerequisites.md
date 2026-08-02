@@ -1,6 +1,6 @@
 ## Parameter StoreにCloudWatch Agentの設定を保存
 
-Parameter Storeのパラメータ /web-lab/cloudwatch-agent/config に、CloudWatch Agentの設定ファイルを保存しました。
+Parameter Storeのパラメータ `/web-lab/cloudwatch-agent/config` に、CloudWatch Agentの設定ファイルを保存しました。
 
 ```json
 {
