@@ -3,7 +3,7 @@
 SSMを使用してEC2インスタンス(web-lab-web-ec2-a/web-lab-web-ec2-c)に接続しました。
 
 ---
-## Nginx,CloudwatchAgentインストール
+## Nginx,Cloudwatch Agentインストール
 
 ```bash
 sudo dnf update -y
