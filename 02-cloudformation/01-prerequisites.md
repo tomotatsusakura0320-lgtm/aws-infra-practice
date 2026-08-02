@@ -87,10 +87,14 @@ Parameter Storeのパラメータ /web-lab/cloudwatch-agent/config に、CloudWa
 ---
 ## S3にWebコンテンツを保存
 
-S3バケットにNginxのトップページとなるindex.htmlを保存しました。
-EC2起動時にUserDataからS3上のindex.htmlを取得し、Nginxのドキュメントルートへ配置します。
+S3バケットに、各Webサーバ用のindex.htmlを保存しました。
 
-index.html
+- `/server-a/index.html`：Server A用
+- `/server-c/index.html`：Server C用
+
+EC2起動時にUserDataから自身のサーバ用のindex.htmlを取得し、Nginxのドキュメントルートへ配置します。
+
+`/server-a/index.html`
 
 ```html
 <!DOCTYPE html>
