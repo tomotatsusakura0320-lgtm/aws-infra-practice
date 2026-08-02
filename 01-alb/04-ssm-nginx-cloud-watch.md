@@ -50,4 +50,4 @@ web-lab-web-ec2-aで、NginxとCloudwatchAgentの起動と自動起動の有効�
 systemctl status nginx
 systemctl status amazon-cloudwatch-agent
 ```
-web-lab-web-ec2-cで、nginxとCloudwatchAgentの起動と自動起動の有効化を確認しました。
+web-lab-web-ec2-cで、NginxとCloudwatchAgentの起動と自動起動の有効化を確認しました。
