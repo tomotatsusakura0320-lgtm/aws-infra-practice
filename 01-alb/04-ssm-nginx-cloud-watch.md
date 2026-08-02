@@ -36,7 +36,6 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
 ```
 ---
 ## Nginx,Cloudwatch Agent起動確認
----
 
 web-lab-web-ec2-aで、NginxとCloudwatch Agentの起動と自動起動の有効化を確認しました。
 
