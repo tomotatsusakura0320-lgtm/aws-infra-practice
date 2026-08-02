@@ -1,5 +1,6 @@
 # ALBを利用した高可用性Webシステム
 
+---
 ## 概要
 AWS上に高可用性を意識したWebサーバ環境を構築しました。
 
@@ -9,6 +10,7 @@ Application Load Balancer(ALB)を経由してブラウザからアクセスで�
 また、EC2はプライベートサブネットに配置し、
 Systems Manager Session Manager(SSM)を利用して管理を行いました。
 
+---
 ## 構成図
 
 ![構成図](./images/AWS-Practice-01.png)
