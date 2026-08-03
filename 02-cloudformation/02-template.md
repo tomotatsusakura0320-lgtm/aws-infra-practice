@@ -77,6 +77,8 @@ EnableNatGateway と EnableCloudWatch の両方が "true" の場合のみ、Clou
 ---
 ## IAM Role
 
+EC2インスタンスにIAMロールを割り当て、Systems Managerによる接続、CloudWatch Agentによるログ送信、およびS3からWebコンテンツを取得するための権限を付与しています。
+
 ```yaml
 WebServerRole:
   Type: AWS::IAM::Role
@@ -106,4 +108,4 @@ WebServerRole:
                 - arn:aws:s3:::example-web-lab-s3-example-bucket
                 - arn:aws:s3:::example-web-lab-s3-example-bucket/*
 ```
-EC2インスタンスにIAMロールを割り当て、Systems Managerによる接続、CloudWatch Agentによるログ送信、およびS3からWebコンテンツを取得するための権限を付与しています。
+
