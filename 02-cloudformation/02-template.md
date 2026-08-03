@@ -15,6 +15,15 @@ Security Group
 ---
 ## Parameters
 
+## LatestAMIId
+AWS Systems Manager パラメータストアの公開パラメータを利用し、最新の Amazon Linux 2023 AMI を自動取得しています。
+
+## EnableNatGateway
+NAT Gateway の作成有無を切り替えるためのパラメータです。
+
+## EnableCloudWatch
+CloudWatch Logs 関連リソースの作成有無を切り替えるためのパラメータです。
+
 ```yaml
 Parameters:
   LatestAMIId:
@@ -38,18 +47,15 @@ Parameters:
       - "false"
     Description: Enable CloudWatch Agent
 ```
-## LatestAMIId
-AWS Systems Manager パラメータストアの公開パラメータを利用し、最新の Amazon Linux 2023 AMI を自動取得しています。
-
-## EnableNatGateway
-NAT Gateway の作成有無を切り替えるためのパラメータです。
-
-## EnableCloudWatch
-CloudWatch Logs 関連リソースの作成有無を切り替えるためのパラメータです。
-
 
 ---
 ## Conditions
+
+## CreateNatGateway
+EnableNatGateway パラメータが "true" の場合のみ、NAT Gateway関連のリソースを作成します。
+
+## CreateCloudWatch
+EnableNatGateway と EnableCloudWatch の両方が "true" の場合のみ、CloudWatch Logs関連のリソースを作成します。
 
 ```yaml
 Conditions:
@@ -67,12 +73,6 @@ Conditions:
           - !Ref EnableCloudWatch
           - "true"
 ```
-
-## CreateNatGateway
-EnableNatGateway パラメータが "true" の場合のみ、NAT Gateway関連のリソースを作成します。
-
-## CreateCloudWatch
-EnableNatGateway と EnableCloudWatch の両方が "true" の場合のみ、CloudWatch Logs関連のリソースを作成します。
 
 ---
 ## IAM Role
