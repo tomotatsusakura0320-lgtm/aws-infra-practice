@@ -103,5 +103,7 @@ WebServerRole:
                 - s3:ListBucket
                 - s3:GetObject
               Resource:
-                - arn:aws:s3:::example-web-lab-s3-bucket
-                - arn:aws:s3:::example-web-lab-s3-bucket/*
+                - arn:aws:s3:::example-web-lab-s3-example-bucket
+                - arn:aws:s3:::example-web-lab-s3-example-bucket/*
+```
+EC2インスタンスにIAMロールを割り当て、Systems Managerによる接続、CloudWatch Agentによるログ送信、およびS3からWebコンテンツを取得するための権限を付与しています。
