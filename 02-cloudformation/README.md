@@ -7,7 +7,7 @@
 
 VPC、サブネット、ルートテーブル、NAT Gateway、Application Load Balancer(ALB)、EC2、IAMロールなどのAWSリソースをテンプレートとして定義し、同等の構成を再現できます。
 
-また、EC2起動時にはUserDataを利用してnginxおよびCloudWatch Agentのインストール・設定を自動化しています。
+また、EC2起動時にはUserDataを利用してNginxおよびCloudWatch Agentのインストール・設定を自動化しています。
 
 CloudWatch Agentの設定はSystems Manager Parameter Storeから取得し、WebコンテンツはAmazon S3から取得することで、設定やコンテンツをCloudFormationテンプレートから分離しています。
 
