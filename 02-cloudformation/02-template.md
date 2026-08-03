@@ -206,3 +206,27 @@ Listenerでは、ALBが受信したHTTP（80番ポート）のリクエストを
         - Type: forward
           TargetGroupArn: !Ref TargetGroup
 ```
+
+---
+## Outputs
+
+Outputsでは、CloudFormationで作成したリソースの情報をスタック作成後に確認できるようにしています。
+
+```yaml
+Outputs:
+  VpcId:
+    Description: VPC ID
+    Value: !Ref MyVPC
+
+  WebServerInstanceAId:
+    Description: Web Instance A ID
+    Value: !Ref WebServerInstanceA
+
+  WebServerInstanceCId:
+    Description: Web Instance C ID
+    Value: !Ref WebServerInstanceC
+
+  ALBDNSName:
+    Description: ALB DNS Name
+    Value: !GetAtt ApplicationLoadBalancer.DNSName
+```
