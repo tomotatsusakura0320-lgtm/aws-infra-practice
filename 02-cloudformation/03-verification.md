@@ -5,5 +5,5 @@
 
 ---
 EC2インスタンスが作成されていることを確認しました。
-![EC2画面](./images/02-web-lab-web-ec2-a.png)
-![EC2画面](./images/02-web-lab-web-ec2-c.png)
+![EC2画面](./images/02-cfn-web-lab-web-ec2-a.png)
+![EC2画面](./images/02-cfn-web-lab-web-ec2-c.png)
