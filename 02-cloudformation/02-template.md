@@ -49,4 +49,59 @@ CloudWatch Logs 関連リソースの作成有無を切り替えるためのパ�
 
 
 ---
+## Conditions
 
+```yaml
+Conditions:
+  CreateNatGateway:
+    Fn::Equals:
+      - !Ref EnableNatGateway
+      - "true"
+
+  CreateCloudWatch:
+    Fn::And:
+      - Fn::Equals:
+          - !Ref EnableNatGateway
+          - "true"
+      - Fn::Equals:
+          - !Ref EnableCloudWatch
+          - "true"
+```
+
+## CreateNatGateway
+EnableNatGateway パラメータが "true" の場合のみ、NAT Gateway関連のリソースを作成します。
+
+## CreateCloudWatch
+EnableNatGateway と EnableCloudWatch の両方が "true" の場合のみ、CloudWatch Logs関連のリソースを作成します。
+
+---
+## IAM Role
+
+```yaml
+WebServerRole:
+  Type: AWS::IAM::Role
+  Properties:
+    AssumeRolePolicyDocument:
+      Statement:
+        - Effect: Allow
+          Principal:
+            Service:
+              - ec2.amazonaws.com
+          Action:
+            - sts:AssumeRole
+
+    ManagedPolicyArns:
+      - arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
+      - arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy
+
+    Policies:
+      - PolicyName: S3ReadIndexHtmlPolicy
+        PolicyDocument:
+          Statement:
+            - Effect: Allow
+              Action:
+                - s3:ListBucket
+                - s3:GetObject
+              Resource:
+                - arn:aws:s3:::example-web-lab-s3-bucket
+                - arn:aws:s3:::example-web-lab-s3-bucket/*
