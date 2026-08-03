@@ -108,7 +108,7 @@ WebServerRole:
                 - arn:aws:s3:::example-web-lab-s3-example-bucket
                 - arn:aws:s3:::example-web-lab-s3-example-bucket/*
 ```
-
+---
 ## EC2
 
 EC2インスタンスはAmazon Linux 2023を使用し、UserDataによって初回起動時に環境を自動構築しています。
@@ -150,4 +150,59 @@ UserDataでは以下の処理を実行します。
       Tags:
         - Key: Name
           Value: cfn-web-lab-web-ec2-a
+```
+
+---
+## ALB
+
+Application Load Balancerは、インターネットからのHTTPリクエストを受け付けるロードバランサーとして作成しています。
+
+```yaml
+ApplicationLoadBalancer:
+  Type: AWS::ElasticLoadBalancingV2::LoadBalancer
+  Properties:
+    Scheme: internet-facing
+    Type: application
+    Subnets:
+      - !Ref PublicSubnetA
+      - !Ref PublicSubnetC
+    SecurityGroups:
+      - !Ref ALBSecurityGroup
+```
+
+---
+## TargetGroup
+
+Target Groupでは、ALBからのリクエスト転送先となるEC2インスタンスを定義しています。
+
+```yaml
+  TargetGroup:
+    Type: AWS::ElasticLoadBalancingV2::TargetGroup
+    Properties:
+      Name: cfn-web-lab-tg
+      VpcId: !Ref MyVPC
+      Protocol: HTTP
+      Port: 80
+      TargetType: instance
+      Targets:
+        - Id: !Ref WebServerInstanceA
+          Port: 80
+        - Id: !Ref WebServerInstanceC
+          Port: 80
+```
+---
+## Listener
+
+Listenerでは、ALBが受信したHTTP（80番ポート）のリクエストをTarget Groupへ転送する設定を行っています。
+
+```yaml
+  ALBListener:
+    Type: AWS::ElasticLoadBalancingV2::Listener
+    Properties:
+      LoadBalancerArn: !Ref ApplicationLoadBalancer
+      Port: 80
+      Protocol: HTTP
+      DefaultActions:
+        - Type: forward
+          TargetGroupArn: !Ref TargetGroup
 ```
