@@ -12,4 +12,4 @@ EC2インスタンスが作成されていることを確認しました。
 ALBが作成されて、ターゲットグループが正常に登録されていることを確認しました。
 ![ALB画面](./images/02-cfn-web-lab-alb.png)
 ![ALB画面](./images/02-cfn-web-lab-alb-1.png)
-![ターゲットグループ画面](./images/02-cfn-web-lab-web-ec2-c.png)
+![ターゲットグループ画面](./images/02-cfn-web-lab-tg.png)
