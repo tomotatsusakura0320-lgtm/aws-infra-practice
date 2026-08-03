@@ -109,3 +109,35 @@ WebServerRole:
                 - arn:aws:s3:::example-web-lab-s3-example-bucket/*
 ```
 
+## EC2
+
+```yaml
+  WebServerInstanceA:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !Ref LatestAMIId
+      InstanceType: t3.micro
+      SubnetId: !Ref PrivateSubnetA
+      SecurityGroupIds:
+        - !Ref WebSecurityGroup
+      IamInstanceProfile: !Ref WebServerInstanceProfile
+      UserData:
+        !Base64 |
+          #!/bin/bash
+          dnf update -y
+          dnf install -y nginx
+          aws s3 cp \
+            s3://web-lab-s3-tenten-20260802/server-a/index.html \
+            /usr/share/nginx/html/index.html
+          systemctl enable nginx
+          systemctl start nginx
+          dnf install -y amazon-cloudwatch-agent
+          systemctl enable amazon-cloudwatch-agent
+          /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
+            -a fetch-config \
+            -m ec2 \
+            -c ssm:/web-lab/cloudwatch-agent/config \
+            -s
+      Tags:
+        - Key: Name
+          Value: cfn-web-lab-web-ec2-a
