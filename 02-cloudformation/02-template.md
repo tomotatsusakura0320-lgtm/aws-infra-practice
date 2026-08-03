@@ -115,10 +115,10 @@ EC2インスタンスはAmazon Linux 2023を使用し、UserDataによって初�
 
 UserDataでは以下の処理を実行します。
 
-nginxのインストール
-S3からWebページを取得
-nginxサービスの起動
-CloudWatch Agentのインストールおよび設定
+- nginxのインストール
+- S3からWebページを取得
+- nginxサービスの起動
+- CloudWatch Agentのインストールおよび設定
 
 ```yaml
   WebServerInstanceA:
