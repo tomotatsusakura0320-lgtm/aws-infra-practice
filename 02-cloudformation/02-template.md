@@ -10,7 +10,7 @@ EC2 ×2
 IAM Role
 Security Group
 
-テンプレート全文は![](./template.yaml) にあります。
+テンプレート全文は![テンプレート](./template.yaml) にあります。
 
 ---
 ## Parameters
