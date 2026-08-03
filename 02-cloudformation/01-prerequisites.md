@@ -88,7 +88,7 @@ Parameter Storeのパラメータ `/web-lab/cloudwatch-agent/config` に、Cloud
 ## S3にWebコンテンツを保存
 
 S3バケットに、各Webサーバ用のindex.htmlを保存しました。
-
+![S3画面](./images/02-s3-backet.png)
 - `/server-a/index.html`：Server A用
 - `/server-c/index.html`：Server C用
 
