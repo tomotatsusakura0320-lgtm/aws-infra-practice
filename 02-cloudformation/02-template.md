@@ -111,6 +111,15 @@ WebServerRole:
 
 ## EC2
 
+EC2インスタンスはAmazon Linux 2023を使用し、UserDataによって初回起動時に環境を自動構築しています。
+
+UserDataでは以下の処理を実行します。
+
+nginxのインストール
+S3からWebページを取得
+nginxサービスの起動
+CloudWatch Agentのインストールおよび設定
+
 ```yaml
   WebServerInstanceA:
     Type: AWS::EC2::Instance
@@ -127,7 +136,7 @@ WebServerRole:
           dnf update -y
           dnf install -y nginx
           aws s3 cp \
-            s3://web-lab-s3-tenten-20260802/server-a/index.html \
+            s3://example-web-lab-s3-example-bucket/server-a/index.html \
             /usr/share/nginx/html/index.html
           systemctl enable nginx
           systemctl start nginx
