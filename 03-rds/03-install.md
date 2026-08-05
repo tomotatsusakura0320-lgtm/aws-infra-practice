@@ -11,16 +11,18 @@ sudo dnf install nginx -y
 sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
-PIPをインストールしました。
+PIPをインストールし、確認しました。
 
 ```bash
 sudo dnf install python3-pip -y
+pip3 --version
 ```
 
-MySQL Clientをインストールしました。
+MySQL Clientをインストールし、確認しました。
 
 ```bash
 sudo dnf install mariadb105 -y
+mariadb --version
 ```
 ---
 ## Python仮想環境の作成
