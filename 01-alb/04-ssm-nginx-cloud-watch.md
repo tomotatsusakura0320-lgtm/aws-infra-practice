@@ -5,7 +5,7 @@ SSMを使用してEC2インスタンス(`web-lab-web-ec2-a`,`web-lab-web-ec2-c`)
 ---
 ## Nginx,Cloudwatch Agentインストール
 
-パッケージを更新した後、NginxとCloudwatch Agentをインストール、起動、自動起動の有効化を行いました。
+パッケージを更新した後、NginxとCloudwatch Agentに対して、インストール、起動、自動起動の有効化を行いました。
 
 ```bash
 sudo dnf update -y
