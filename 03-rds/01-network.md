@@ -12,6 +12,6 @@
 
 ALB用セキュリティグループ `rds-lab-sg-alb` を作成し、HTTP(80)を許可しました。
 
-Webサーバ用セキュリティグループ `rds-lab-sg-web` を作成し、HTTP(80)をALB用セキュリティグループからのみ許可しました。
+Webサーバ用セキュリティグループ `rds-lab-sg-web` を作成し、HTTP(80)を `rds-lab-sg-alb` からのみ許可しました。
 
-DB用セキュリティグループ `rds-lab-sg-db` を作成し、HTTP(80)をはWebサーバ用セキュリティグループからのみ許可しました。
+DB用セキュリティグループ `rds-lab-sg-db` を作成し、MYSQL/Aurora(3306)を `rds-lab-sg-web` からのみ許可しました。
