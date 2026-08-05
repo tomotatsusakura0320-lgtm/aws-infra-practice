@@ -28,8 +28,8 @@ sudo dnf install mariadb105 -y
 アプリケーション用ディレクトリを作成した後、Python仮想環境を作成、有効化しました。
 
 ```bash
-mkdir ~/memo-app
-cd ~/memo-app
+mkdir -p /home/ec2-user/memo-app
+cd /home/ec2-user/memo-app
 
 python3 -m venv venv
 source venv/bin/activate
