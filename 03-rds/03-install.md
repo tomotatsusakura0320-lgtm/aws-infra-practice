@@ -12,18 +12,13 @@ sudo dnf install nginx -y
 sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
-
----
-## PIPインストール
-
 PIPをインストールしました。
 
 ```bash
 sudo dnf install python3-pip -y
 ```
 
-## MySQL Clientインストール
-
+MySQL Clientをインストールしました。
 
 ```bash
 sudo dnf install mariadb105 -y
