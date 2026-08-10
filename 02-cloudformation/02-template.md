@@ -14,13 +14,13 @@ Security Group
 
 ## Parameters
 
-### LatestAMIId
+#### LatestAMIId
 AWS Systems Manager パラメータストアの公開パラメータを利用し、最新の Amazon Linux 2023 AMI を自動取得しています。
 
-### EnableNatGateway
+#### EnableNatGateway
 NAT Gateway の作成有無を切り替えるためのパラメータです。
 
-### EnableCloudWatch
+#### EnableCloudWatch
 CloudWatch Logs 関連リソースの作成有無を切り替えるためのパラメータです。
 
 ```yaml
