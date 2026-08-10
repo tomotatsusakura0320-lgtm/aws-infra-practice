@@ -12,7 +12,7 @@
 
 Webサーバ用セキュリティグループ `rds-lab-sg-ec2` を作成し、SSH(22)を自IPからのみ許可しました。
 
-DB用セキュリティグループ `rds-lab-sg-rds` を作成し、MYSQL/Aurora(3306)を `rds-lab-sg-web` からのみ許可しました。
+DB用セキュリティグループ `rds-lab-sg-rds` を作成し、MYSQL/Aurora(3306)を `rds-lab-sg-ec2` からのみ許可しました。
 
 ---
 ## IAMロール作成
