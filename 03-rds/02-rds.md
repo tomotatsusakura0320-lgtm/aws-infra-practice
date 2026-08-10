@@ -1,25 +1,26 @@
 ## RDSサブネットグループ作成
-サブネットグループを作成しました
+サブネットグループを作成しました。
 
 ![サブネットグループ](./images/03-rds-lab-subnet-group.png)
 
 ## RDS作成
 ![RDS1](./images/03-rds-lab-rds.png)
 ![RDS2](./images/03-rds-lab-rds-1.png)
+
 ## CREATE
-SSM接続後、MySQLに接続しました
+SSM接続後、MySQLに接続しました。
 
 ```bash
 mysql -h rds-lab-rds.xxxxxxxxx.ap-northeast-1.rds.amazonaws.com -P 3306 -u xxxx -p
 ```
 
-データベースを作成しました
+データベース`parctice_db`を作成しました。
 ```sql
 CREATE DATABASE practice_db;
 USE practice_db;
 ```
 
-テーブルを作成しました
+テーブル`users`を作成しました
 ```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -38,10 +39,11 @@ VALUES
 ('Hanako', 'hanako@example.com');
 ```
 
-## SERECT
+## SELECT
 ```sql
 SELECT * FROM users;
 ```
+![SERECT画面](./images/03-rds-lab-serect.png)
 
 ## UPDATE
 ```sql
@@ -51,6 +53,7 @@ WHERE name = 'Taro';
 
 SELECT * FROM users;
 ```
+![SELECT画面](./images/03-rds-lab-serect-after.png)
 
 ## DELETE
 ```sql
