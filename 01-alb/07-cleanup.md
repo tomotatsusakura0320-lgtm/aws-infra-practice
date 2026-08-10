@@ -3,7 +3,7 @@
 料金がかかる以下のリソースを削除しました。
 
 - EC2インスタンス
-2.EBSボリューム
-3.ALB
-4.NATゲートウェイ
-5.ElasticIP
+- EBSボリューム
+- ALB
+- NATゲートウェイ
+- ElasticIP
