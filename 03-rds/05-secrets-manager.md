@@ -3,3 +3,15 @@ Secretを作成し、認証情報を入力しました。
 
 ![クレデンシャル画面1](./images/03-rds-lab-rds-credentials.png)
 ![クレデンシャル画面2](./images/03-rds-lab-credentials-value.png)
+
+## 確認
+Secretの内容が表示されることを確認しました。
+
+```bash
+aws secretsmanager get-secret-value \
+  --secret-id rds-portfolio-practice-credentials \
+  --query SecretString \
+  --output text
+```
+
+![クレデンシャル確認画面](./images/03-get-secret-value.png)
