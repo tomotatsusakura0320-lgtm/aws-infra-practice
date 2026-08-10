@@ -15,7 +15,7 @@ DB用セキュリティグループ `rds-lab-sg-rds` を作成し、MYSQL/Aurora
 
 ## IAMロール作成
 
-IAMロール `rds-lab-ec2-role` を作成し、ポリシー(`AmazonSSMManagedInstanceCore`,`CloudWatchAgentServerPolicy`)をアタッチしました。
+IAMロール `rds-lab-ec2-role` を作成し、ポリシー(`AmazonSSMManagedInstanceCore`,`SecretsManagerReadWrite`)をアタッチしました。
 
 ## EC2作成
 
