@@ -45,16 +45,6 @@ SELECT * FROM users;
 ```
 ![SERECT画面](./images/03-rds-serect.png)
 
-## UPDATE
-```sql
-UPDATE users
-SET email = 'taro-new@example.com'
-WHERE name = 'Taro';
-
-SELECT * FROM users;
-```
-![SELECT画面](./images/03-rds-serect-after.png)
-
 ## DELETE
 ```sql
 DELETE FROM users
@@ -62,3 +52,4 @@ WHERE name = 'Hanako';
 
 SELECT * FROM users;
 ```
+![SELECT画面](./images/03-rds-serect-after.png)
