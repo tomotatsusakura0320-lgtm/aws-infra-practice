@@ -14,7 +14,6 @@
 
 ![nginxトップページ設定画面](./images/01-nginx-top-after-c.png)
 
----
 ## 動作確認
 
 
