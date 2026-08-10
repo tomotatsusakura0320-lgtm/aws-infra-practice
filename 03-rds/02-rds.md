@@ -15,12 +15,14 @@ mysql -h rds-lab-rds.xxxxxxxxx.ap-northeast-1.rds.amazonaws.com -P 3306 -u xxxx 
 ```
 
 データベース`parctice_db`を作成しました。
+
 ```sql
 CREATE DATABASE practice_db;
 USE practice_db;
 ```
 
 テーブル`users`を作成しました。
+
 ```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -31,6 +33,7 @@ CREATE TABLE users (
 ```
 
 ## INSERT
+テーブル `users` にユーザー情報を2件登録しました。
 
 ```sql
 INSERT INTO users (name, email)
@@ -40,12 +43,16 @@ VALUES
 ```
 
 ## SELECT
+テーブル `users` から全てのデータを取得しました。
+
 ```sql
 SELECT * FROM users;
 ```
 ![SERECT画面](./images/03-rds-serect.png)
 
 ## DELETE
+テーブル `users` から `Hanako` のデータを削除し、削除後のデータを確認しました。
+
 ```sql
 DELETE FROM users
 WHERE name = 'Hanako';
