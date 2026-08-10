@@ -15,5 +15,6 @@ RDSに接続して `max_connections` の値を確認しました。
 変更前
 ![max_connections変更前](./images/03-show-max_connections-before.png)
 
+---
 変更後
 ![max_connections変更後](./images/03-show-max_connections-after.png)
