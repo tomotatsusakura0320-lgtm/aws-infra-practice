@@ -1,6 +1,7 @@
 ## RDSサブネットグループ作成
+サブネットグループを作成しました
 
-IAMロール `rds-lab-ec2-role` を作成し、ポリシー(`AmazonSSMManagedInstanceCore`,`CloudWatchAgentServerPolicy`)をアタッチしました。
+![サブネットグループ](./images/03-rds-lab-rds-subnet-group.png)
 
 ## RDS作成
 EC2インスタンスを以下の設定で作成し、パブリックサブネット(`rds-lab-public-subnet-a`)に配置しました。
