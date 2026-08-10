@@ -12,7 +12,6 @@ Security Group
 
 テンプレート全文は[テンプレート](./template.yaml) にあります。（S3バケット名は変更しています。）
 
----
 ## Parameters
 
 ### LatestAMIId
@@ -48,7 +47,6 @@ Parameters:
     Description: Enable CloudWatch Agent
 ```
 
----
 ## Conditions
 
 ### CreateNatGateway
@@ -74,7 +72,6 @@ Conditions:
           - "true"
 ```
 
----
 ## IAM Role
 
 EC2インスタンスにIAMロールを割り当て、Systems Managerによる接続、CloudWatch Agentによるログ送信、およびS3からWebコンテンツを取得するための権限を付与しています。
@@ -108,7 +105,7 @@ WebServerRole:
                 - arn:aws:s3:::example-web-lab-s3-example-bucket
                 - arn:aws:s3:::example-web-lab-s3-example-bucket/*
 ```
----
+
 ## EC2
 
 EC2インスタンスはAmazon Linux 2023を使用し、UserDataによって初回起動時に環境を自動構築しています。
@@ -152,7 +149,6 @@ UserDataでは以下の処理を実行します。
           Value: cfn-web-lab-web-ec2-a
 ```
 
----
 ## ALB
 
 Application Load Balancerは、インターネットからのHTTPリクエストを受け付けるロードバランサーとして作成しています。
@@ -170,7 +166,6 @@ ApplicationLoadBalancer:
       - !Ref ALBSecurityGroup
 ```
 
----
 ## TargetGroup
 
 Target Groupでは、ALBからのリクエスト転送先となるEC2インスタンスを定義しています。
@@ -190,7 +185,7 @@ Target Groupでは、ALBからのリクエスト転送先となるEC2インス�
         - Id: !Ref WebServerInstanceC
           Port: 80
 ```
----
+
 ## Listener
 
 Listenerでは、ALBが受信したHTTP（80番ポート）のリクエストをTarget Groupへ転送する設定を行っています。
@@ -207,7 +202,6 @@ Listenerでは、ALBが受信したHTTP（80番ポート）のリクエストを
           TargetGroupArn: !Ref TargetGroup
 ```
 
----
 ## Outputs
 
 Outputsでは、CloudFormationで作成したリソースの情報をスタック作成後に確認できるようにしています。
