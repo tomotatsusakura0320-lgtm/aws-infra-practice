@@ -1,30 +1,30 @@
 ## RDSサブネットグループ作成
+サブネットグループを作成しました。
 
-IAMロール `rds-lab-ec2-role` を作成し、ポリシー(`AmazonSSMManagedInstanceCore`,`CloudWatchAgentServerPolicy`)をアタッチしました。
+![サブネットグループ](./images/03-rds-lab-subnet-group.png)
 
 ## RDS作成
-EC2インスタンスを以下の設定で作成し、パブリックサブネット(`rds-lab-public-subnet-a`)に配置しました。
+RDSを作成しました。
 
-- マシンイメージ：Amazon Linux 2023
-- インスタンスタイプ：t3.micro
-- キーペア：あり
-- セキュリティグループ：`rds-lab-sg-ec2`
-- IAMロール：`rds-lab-ec2-role`
+![RDS1](./images/03-rds-lab-rds.png)
+![RDS2](./images/03-rds-lab-rds-1.png)
 
 ## CREATE
-SSM接続後、MySQLに接続しました
+SSM接続後、MySQLに接続しました。
 
 ```bash
 mysql -h rds-lab-rds.xxxxxxxxx.ap-northeast-1.rds.amazonaws.com -P 3306 -u xxxx -p
 ```
 
-データベースを作成しました
+データベース`parctice_db`を作成しました。
+
 ```sql
 CREATE DATABASE practice_db;
 USE practice_db;
 ```
 
-テーブルを作成しました
+テーブル`users`を作成しました。
+
 ```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -35,6 +35,7 @@ CREATE TABLE users (
 ```
 
 ## INSERT
+テーブル `users` にユーザー情報を2件登録しました。
 
 ```sql
 INSERT INTO users (name, email)
@@ -43,24 +44,21 @@ VALUES
 ('Hanako', 'hanako@example.com');
 ```
 
-## SERECT
+## SELECT
+テーブル `users` から全てのデータを取得しました。
+
 ```sql
 SELECT * FROM users;
 ```
-
-## UPDATE
-```sql
-UPDATE users
-SET email = 'taro-new@example.com'
-WHERE name = 'Taro';
-
-SELECT * FROM users;
-```
+![SERECT画面](./images/03-rds-serect.png)
 
 ## DELETE
+テーブル `users` から `Hanako` のデータを削除し、削除後のデータを確認しました。
+
 ```sql
 DELETE FROM users
 WHERE name = 'Hanako';
 
 SELECT * FROM users;
 ```
+![SELECT画面](./images/03-rds-serect-after.png)

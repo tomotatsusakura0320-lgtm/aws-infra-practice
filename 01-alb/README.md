@@ -11,7 +11,7 @@ Systems Manager Session Manager(SSM)を利用して管理を行いました。
 
 ## 構成図
 
-![構成図](./images/AWS-Practice-01.png)
+![構成図](./images/01-kouseizu.png)
 
 ## 構築手順
 

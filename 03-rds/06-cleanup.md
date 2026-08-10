@@ -4,6 +4,6 @@
 
 - EC2インスタンス
 - EBSボリューム
-- ALB
-- NATゲートウェイ
-- ElasticIP
+- RDS
+- スナップショット
+- Secret
