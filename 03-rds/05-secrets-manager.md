@@ -9,7 +9,7 @@ EC2へSSM接続し、Secretの内容が表示されることを確認しまし�
 
 ```bash
 aws secretsmanager get-secret-value \
-  --secret-id rds-portfolio-practice-credentials \
+  --secret-id rds-lab-rds-credentials \
   --query SecretString \
   --output text
 ```
