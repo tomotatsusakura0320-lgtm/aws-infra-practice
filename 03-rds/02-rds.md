@@ -4,14 +4,8 @@
 ![サブネットグループ](./images/03-rds-lab-subnet-group.png)
 
 ## RDS作成
-EC2インスタンスを以下の設定で作成し、パブリックサブネット(`rds-lab-public-subnet-a`)に配置しました。
-
-- マシンイメージ：Amazon Linux 2023
-- インスタンスタイプ：t3.micro
-- キーペア：あり
-- セキュリティグループ：`rds-lab-sg-ec2`
-- IAMロール：`rds-lab-ec2-role`
-
+![RDS1](./images/03-rds-lab-rds.png)
+![RDS2](./images/03-rds-lab-rds-1.png)
 ## CREATE
 SSM接続後、MySQLに接続しました
 
