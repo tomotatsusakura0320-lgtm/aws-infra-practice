@@ -11,4 +11,15 @@ EC2インスタンスを以下の設定で作成し、パブリックサブネ�
 - セキュリティグループ：`rds-lab-sg-ec2`
 - IAMロール：`rds-lab-ec2-role`
 
-## CURD
+## CREATE
+SSM接続後、MySQLに接続しました
+
+```bash
+mysql -h rds-lab-rds.xxxxxxxxx.ap-northeast-1.rds.amazonaws.com -P 3306 -u xxxx -p
+```
+データベースを作成しました
+
+```sql
+CREATE DATABASE portfolio_db;
+USE portfolio_db;
+```
