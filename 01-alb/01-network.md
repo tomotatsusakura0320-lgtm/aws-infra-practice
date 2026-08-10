@@ -4,7 +4,6 @@ VPCを作成しました。
 
 ![VPC設定](./images/01-web-lab-vpc.png)
 
----
 ## サブネット作成
 
 ap-northeast-1aにパブリックサブネットとプライベートサブネットを作成しました。
@@ -19,14 +18,14 @@ ap-northeast-1aにパブリックサブネットとプライベートサブネ�
 ![サブネット設定](./images/01-web-lab-public-subnet-c.png)
 ![サブネット設定](./images/01-web-lab-private-subnet-c.png)
 
----
+
 ## インターネットゲートウェイ作成
 
 インターネットゲートウェイを作成し、VPCにアタッチしました。
 
 ![インターネットゲートウェイ設定](./images/01-web-lab-igw.png)
 
----
+
 ## NATゲートウェイ作成
 
 2つのパブリックサブネットそれぞれにNATゲートウェイを作成し、ElasticIPを割り当てました。
@@ -34,7 +33,6 @@ ap-northeast-1aにパブリックサブネットとプライベートサブネ�
 ![NATゲートウェイ設定](./images/01-web-lab-natgw-a.png)
 ![NATゲートウェイ設定](./images/01-web-lab-natgw-c.png)
 
----
 ## ルートテーブル作成
 
 パブリックサブネット用ルートテーブルを１つ作成し、2つのパブリックサブネットに関連付けました。
@@ -48,7 +46,7 @@ ap-northeast-1aにパブリックサブネットとプライベートサブネ�
 ![ルートテーブル設定](./images/01-web-lab-private-rt-a.png)
 ![ルートテーブル設定](./images/01-web-lab-private-rt-c.png)
 
----
+
 ## セキュリティグループ作成
 
 ALB用セキュリティグループを作成し、HTTP(80)とHTTPS(443)を許可しました。

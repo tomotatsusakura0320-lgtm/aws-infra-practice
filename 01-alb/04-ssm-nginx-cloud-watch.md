@@ -1,11 +1,10 @@
 ## SSM接続
 
-SSMを使用してEC2インスタンス(web-lab-web-ec2-a/web-lab-web-ec2-c)に接続しました。
+SSMを使用してEC2インスタンス(`web-lab-web-ec2-a`,`web-lab-web-ec2-c`)に接続しました。
 
----
 ## Nginx,Cloudwatch Agentインストール
 
-アップデートを確認した後、NginxとCloudwatch Agentをインストール、起動、自動起動の有効化を行いました。
+パッケージを更新した後、NginxとCloudwatch Agentに対して、インストール、起動、自動起動の有効化を行いました。
 
 ```bash
 sudo dnf update -y
@@ -19,7 +18,6 @@ sudo systemctl start amazon-cloudwatch-agent
 sudo systemctl enable amazon-cloudwatch-agent
 ```
 
----
 ## Cloudwatch Agent設定
 
 ウィザードを実行し、監視するメトリクスやログ収集の設定を行いました。
@@ -34,10 +32,10 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json \
 -s
 ```
----
+
 ## Nginx,Cloudwatch Agent起動確認
 
-web-lab-web-ec2-aで、NginxとCloudwatch Agentの起動と自動起動の有効化を確認しました。
+`web-lab-web-ec2-a` で、NginxとCloudwatch Agentの起動と自動起動の有効化を確認しました。
 
 ```bash
 systemctl status nginx
@@ -46,7 +44,7 @@ systemctl status amazon-cloudwatch-agent
 ![systemctl staus (a)画面](./images/01-systemctl-status-a.png)
 
 ---
-web-lab-web-ec2-cで、NginxとCloudwatch Agentの起動と自動起動の有効化を確認しました。
+`web-lab-web-ec2-c` で、NginxとCloudwatch Agentの起動と自動起動の有効化を確認しました。
 
 ```bash
 systemctl status nginx
