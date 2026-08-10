@@ -20,7 +20,7 @@ CREATE DATABASE practice_db;
 USE practice_db;
 ```
 
-テーブル`users`を作成しました
+テーブル`users`を作成しました。
 ```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -43,7 +43,7 @@ VALUES
 ```sql
 SELECT * FROM users;
 ```
-![SERECT画面](./images/03-rds-lab-serect.png)
+![SERECT画面](./images/03-rds-serect.png)
 
 ## UPDATE
 ```sql
@@ -53,7 +53,7 @@ WHERE name = 'Taro';
 
 SELECT * FROM users;
 ```
-![SELECT画面](./images/03-rds-lab-serect-after.png)
+![SELECT画面](./images/03-rds-serect-after.png)
 
 ## DELETE
 ```sql
