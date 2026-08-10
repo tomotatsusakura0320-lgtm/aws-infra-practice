@@ -1,9 +1,8 @@
-## IAMロール作成
+## RDSサブネットグループ作成
 
 IAMロール `rds-lab-ec2-role` を作成し、ポリシー(`AmazonSSMManagedInstanceCore`,`CloudWatchAgentServerPolicy`)をアタッチしました。
 
-## EC2作成
-
+## RDS作成
 EC2インスタンスを以下の設定で作成し、パブリックサブネット(`rds-lab-public-subnet-a`)に配置しました。
 
 - マシンイメージ：Amazon Linux 2023
@@ -12,3 +11,4 @@ EC2インスタンスを以下の設定で作成し、パブリックサブネ�
 - セキュリティグループ：`rds-lab-sg-ec2`
 - IAMロール：`rds-lab-ec2-role`
 
+## CURD
