@@ -5,7 +5,7 @@ Secretを作成し、認証情報を入力しました。
 ![クレデンシャル画面2](./images/03-rds-lab-credentials-value.png)
 
 ## 確認
-Secretの内容が表示されることを確認しました。
+EC2へSSM接続し、Secretの内容が表示されることを確認しました。
 
 ```bash
 aws secretsmanager get-secret-value \
