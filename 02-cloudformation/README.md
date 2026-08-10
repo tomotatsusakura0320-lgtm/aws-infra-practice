@@ -1,6 +1,5 @@
 # CloudFormationによるALBを利用した高可用性Webシステム
 
----
 ## 概要
 
 01-albでコンソールから構築したWebシステムと同じものを、AWS CloudFormationを利用して自動構築できるようにしました。
@@ -11,7 +10,6 @@ VPC、サブネット、ルートテーブル、NAT Gateway、Application Load B
 
 CloudWatch Agentの設定はSystems Manager Parameter Storeから取得し、WebコンテンツはAmazon S3から取得することで、設定やコンテンツをCloudFormationテンプレートから分離しています。
 
----
 ## 構築手順
 
 - [01. 事前準備](01-prerequisites.md)
