@@ -4,6 +4,8 @@
 ![サブネットグループ](./images/03-rds-lab-subnet-group.png)
 
 ## RDS作成
+RDSを作成しました。
+
 ![RDS1](./images/03-rds-lab-rds.png)
 ![RDS2](./images/03-rds-lab-rds-1.png)
 
