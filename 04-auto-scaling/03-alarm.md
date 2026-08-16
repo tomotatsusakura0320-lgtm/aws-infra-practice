@@ -52,8 +52,6 @@ SNSトピックとサブスクリプションを作成し、AWSから送信さ�
 ウェブブラウザからALBのDNS名にアクセスし、ページを更新することで新たに追加された2台のEC2インスタンスのインスタンスIDがそれぞれ表示されることを確認しました。
 
 ![Nginx Top C](./images/04-nginx-top-c.png)
-
----
 ![Nginx Top D](./images/04-nginx-top-d.png)
 
 ---
@@ -66,3 +64,9 @@ SNSトピックとサブスクリプションを作成し、AWSから送信さ�
 
 ![スケールイン後ターゲットグループ1](./images/04-web-lab-tg-c-1.png)
 ![スケールイン後ターゲットグループ2](./images/04-web-lab-tg-c-2.png)
+
+---
+Cloudwatch Alarmの推移
+
+![スケールアウト用アラームのグラフ](./images/04-web-lab-scale-out-alarm-g.png)
+![スケールイン用アラームのグラフ](./images/04-web-lab-scale-in-alarm-g.png)
