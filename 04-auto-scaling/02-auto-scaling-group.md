@@ -36,8 +36,8 @@ Auto Scaling Group `web-lab-auto-scaling-group` を以下の設定で作成ま�
 
 インスタンスが2台起動し、ターゲットグループ `web-lab-tg` に登録されていることを確認しました。
 
-![Target Group Before 1](./images/04-web-lab-tg-before-1.png)
-![Target Group Before 2](./images/04-web-lab-tg-before-2.png)
+![Target Group Before 1](./images/04-web-lab-tg-a-1.png)
+![Target Group Before 2](./images/04-web-lab-tg-a-2.png)
 
 ウェブブラウザからALBのDNS名にアクセスし、ページを更新することで2台のEC2インスタンスのインスタンスIDがそれぞれ表示されることを確認しました。
 
