@@ -11,7 +11,7 @@ systemctl enable nginx
 # CloudWatch Agentインストール
 dnf install amazon-cloudwatch-agent -y
 
-# Parameter StoreからCloudWatch Agentの設定を取得して起動
+# 02-cloudformation/01-prerequisites.mdで作成したParameter StoreからCloudWatch Agentの設定を取得して起動
 /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
   -a fetch-config \
   -m ec2 \
