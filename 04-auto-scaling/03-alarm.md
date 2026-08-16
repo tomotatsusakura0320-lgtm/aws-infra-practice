@@ -31,8 +31,15 @@ SNSトピックとサブスクリプションを作成し、AWSから送信さ�
 ![yes-b](./images/04-yes-b.png)
 ![top-b](./images/04-top-b.png)
 
+---
 スケールアウト用アラームがアラーム状態になり、スケールイン用アラームがOK状態になることを確認しました。
 
 ![scale-out-alarm-b](./images/04-web-lab-scale-out-alarm-b.png)
 ![scale-in-alarm-b](./images/04-web-lab-scale-in-alarm-b.png)
 
+---
+スケールアウト用アラームがアラーム状態になったことを知らせる、SNSトピックのサブスクリプションから送信されたメールを確認しました。
+
+![scale-out-email](./images/04-web-lab-scale-out-alarm-email.png)
+
+---
