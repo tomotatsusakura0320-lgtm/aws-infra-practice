@@ -1,4 +1,4 @@
-# CloudFormationによるALBを利用した高可用性Webシステム
+# CloudFormationによるALBを利用した高可用性Webシステムの構築
 
 ## 概要
 
