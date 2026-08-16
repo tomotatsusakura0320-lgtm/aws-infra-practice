@@ -2,7 +2,7 @@
 
 起動テンプレート `web-lab-launch-template` を以下の設定で作成しました。
 
-- AMI: Amazon Linux 2023]
+- AMI: Amazon Linux 2023
 - インスタンスタイプ: t3.micro
 - キーペア: なし
 - サブネット: `web-lab-private-subnet-a`, `web-lab-private-subnet-c`
