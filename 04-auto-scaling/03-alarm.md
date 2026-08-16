@@ -35,7 +35,7 @@ SNSトピックとサブスクリプションを作成し、AWSから送信さ�
 `web-lab-scale-out-alarm` がアラーム状態になり、`web-lab-scale-in-alarm` がOK状態になることを確認しました。
 
 ![スケールアウト用アラームb](./images/04-web-lab-scale-out-alarm-b.png)
-![スケールアウト用アラームb](./images/04-web-lab-scale-in-alarm-b.png)
+![スケールイン用アラームb](./images/04-web-lab-scale-in-alarm-b.png)
 
 ---
 `web-lab-scale-out-alarm` がアラーム状態になったことを知らせる、SNSトピックのサブスクリプションから送信されたメールを確認しました。
@@ -49,7 +49,15 @@ SNSトピックとサブスクリプションを作成し、AWSから送信さ�
 ![スケールアウト後ターゲットグループ2](./images/04-web-lab-tg-a-2.png)
 
 ---
+ウェブブラウザからALBのDNS名にアクセスし、ページを更新することで新たに追加された2台のEC2インスタンスのインスタンスIDがそれぞれ表示されることを確認しました。
+
+![Nginx Top C](./images/04-nginx-top-c.png)
+
+---
+![Nginx Top D](./images/04-nginx-top-d.png)
 
 ---
 `pkill yes` コマンドを実行し、yesプロセスを終了しました。その後 `web-lab-scale-out-alarm` がOK状態になり、`web-lab-scale-in-alarm` がアラーム状態になることを確認しました。
 
+![スケールアウト用アラームb](./images/04-web-lab-scale-out-alarm-c.png)
+![スケールイン用アラームb](./images/04-web-lab-scale-in-alarm-c.png)
