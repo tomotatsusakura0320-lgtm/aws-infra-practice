@@ -45,8 +45,8 @@ SNSトピックとサブスクリプションを作成し、AWSから送信さ�
 ---
 ターゲットグループに2台の新たなインスタンスが追加され、ヘルスチェックで正常になることを確認しました。
 
-![スケールアウト後ターゲットグループ1](./images/04-web-lab-tg-a-1.png)
-![スケールアウト後ターゲットグループ2](./images/04-web-lab-tg-a-2.png)
+![スケールアウト後ターゲットグループ1](./images/04-web-lab-tg-b-1.png)
+![スケールアウト後ターゲットグループ2](./images/04-web-lab-tg-b-2.png)
 
 ---
 ウェブブラウザからALBのDNS名にアクセスし、ページを更新することで新たに追加された2台のEC2インスタンスのインスタンスIDがそれぞれ表示されることを確認しました。
@@ -57,7 +57,12 @@ SNSトピックとサブスクリプションを作成し、AWSから送信さ�
 ![Nginx Top D](./images/04-nginx-top-d.png)
 
 ---
-`pkill yes` コマンドを実行し、yesプロセスを終了しました。その後 `web-lab-scale-out-alarm` がOK状態になり、`web-lab-scale-in-alarm` がアラーム状態になることを確認しました。
+`pkill yes` コマンドを実行し、yesプロセスを終了しました。その後、`web-lab-scale-in-alarm` がアラーム状態になることを確認しました。
 
-![スケールアウト用アラームb](./images/04-web-lab-scale-out-alarm-c.png)
 ![スケールイン用アラームb](./images/04-web-lab-scale-in-alarm-c.png)
+
+---
+ターゲットグループから2台のインスタンスが削除されたことを確認しました。
+
+![スケールイン後ターゲットグループ1](./images/04-web-lab-tg-c-1.png)
+![スケールイン後ターゲットグループ2](./images/04-web-lab-tg-c-2.png)
