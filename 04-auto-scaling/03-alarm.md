@@ -60,6 +60,11 @@ SNSトピックとサブスクリプションを作成し、AWSから送信さ�
 ![スケールイン用アラームb](./images/04-web-lab-scale-in-alarm-c.png)
 
 ---
+`web-lab-scale-in-alarm` がアラーム状態になったことを知らせる、SNSトピックのサブスクリプションから送信されたメールを確認しました。
+
+![スケールイン通知メール](./images/04-scale-in-alarm-email.png)
+
+---
 ターゲットグループから2台のインスタンスが削除されたことを確認しました。
 
 ![スケールイン後ターゲットグループ1](./images/04-web-lab-tg-c-1.png)
