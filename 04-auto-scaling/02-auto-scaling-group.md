@@ -43,9 +43,3 @@ Auto Scaling Group `web-lab-auto-scaling-group` を以下の設定で作成ま�
 
 ![Nginx Top A](./images/04-nginx-top-a.png)
 ![Nginx Top B](./images/04-nginx-top-b.png)
-
----
-Cloudwatch Alarmの推移
-
-![スケールアウト用アラームのグラフ](./images/04-web-lab-scale-out-alarm-g.png)
-![スケールイン用アラームのグラフ](./images/04-web-lab-scale-in-alarm-g.png)
