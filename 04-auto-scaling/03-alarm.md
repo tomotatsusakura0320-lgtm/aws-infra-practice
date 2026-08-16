@@ -24,10 +24,15 @@ SNSトピックとサブスクリプションを作成し、AWSから送信さ�
 
 ## Auto Scalingのスケールアウト検証
 
-スケールアウト前の2台のEC2インスタンスにSSMで接続し、nprocコマンドでCPUコア数を確認した後、それぞれでyes > /dev/null &コマンドを実行してCPU負荷をかけ、スケールアウトの動作を検証した。
+スケールアウト前の2台のEC2インスタンスにSSMで接続し、nprocコマンドでCPUコア数を確認した後、それぞれでyes > /dev/null &コマンドを実行してCPU負荷をかけました。
 
 ![yes-a](./images/04-yes-a.png)
 ![top-a](./images/04-top-a.png)
-
 ![yes-b](./images/04-yes-b.png)
 ![top-b](./images/04-top-b.png)
+
+スケールアウト用アラームがアラーム状態になり、スケールイン用アラームがOK状態になることを確認しました。
+
+![scale-out-alarm-b](./images/04-web-lab-scale-out-alarm-b.png)
+![scale-in-alarm-b](./images/04-web-lab-scale-in-alarm-b.png)
+
