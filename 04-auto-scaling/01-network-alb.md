@@ -10,7 +10,7 @@
 
 ## セキュリティグループ作成
 
-ALB用セキュリティグループ `web-lab-alb-sg` を作成し、HTTP(80)とHTTPS(443)を許可しました。
+ALB用セキュリティグループ (`web-lab-alb-sg`) を作成し、HTTP(80)とHTTPS(443)を許可しました。
 
 Webサーバ用セキュリティグループ `web-lab-web-sg` を作成し、HTTP(80)とHTTPS(443)は `web-lab-alb-sg` からのみ許可しました。
 
