@@ -26,20 +26,24 @@ SNSトピックとサブスクリプションを作成し、AWSから送信さ�
 
 スケールアウト前の2台のEC2インスタンスにSSMで接続し、nprocコマンドでCPUコア数を確認した後、それぞれでyes > /dev/null &コマンドを実行してCPU負荷をかけました。
 
-![yes-a](./images/04-yes-a.png)
-![top-a](./images/04-top-a.png)
-![yes-b](./images/04-yes-b.png)
-![top-b](./images/04-top-b.png)
+![yesコマンドa](./images/04-yes-a.png)
+![topコマンドa](./images/04-top-a.png)
+![yesコマンドb](./images/04-yes-b.png)
+![topコマンドb](./images/04-top-b.png)
 
 ---
 スケールアウト用アラームがアラーム状態になり、スケールイン用アラームがOK状態になることを確認しました。
 
-![scale-out-alarm-b](./images/04-web-lab-scale-out-alarm-b.png)
-![scale-in-alarm-b](./images/04-web-lab-scale-in-alarm-b.png)
+![スケールアウト用アラームb](./images/04-web-lab-scale-out-alarm-b.png)
+![スケールアウト用アラームb](./images/04-web-lab-scale-in-alarm-b.png)
 
 ---
 スケールアウト用アラームがアラーム状態になったことを知らせる、SNSトピックのサブスクリプションから送信されたメールを確認しました。
 
-![scale-out-email](./images/04-web-lab-scale-out-alarm-email.png)
+![スケールアウト通知メール](./images/04-scale-out-alarm-email.png)
 
 ---
+ターゲットグループに2台の新たなインスタンスが追加され、ヘルスチェックで正常になることを確認しました。
+
+![スケールアウト後ターゲットグループ1](./images/04-scale-out-alarm-email.png)
+![scale-out-email](./images/04-scale-out-alarm-email.png)
