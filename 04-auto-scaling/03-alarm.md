@@ -45,5 +45,6 @@ SNSトピックとサブスクリプションを作成し、AWSから送信さ�
 ---
 ターゲットグループに2台の新たなインスタンスが追加され、ヘルスチェックで正常になることを確認しました。
 
-![スケールアウト後ターゲットグループ1](./images/04-scale-out-alarm-email.png)
-![scale-out-email](./images/04-scale-out-alarm-email.png)
+![スケールアウト後ターゲットグループ1](./images/04-web-lab-tg-a-1.png)
+![スケールアウト後ターゲットグループ2](./images/04-web-lab-tg-a-2.png)
+
