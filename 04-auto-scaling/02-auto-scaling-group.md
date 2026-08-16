@@ -10,5 +10,5 @@
 - アベイラビリティゾーン: ap-northeast-1a, ap-northeast-1c
 - セキュリティグループ: `web-lab-web-sg`
 - IAMインスタンスプロフィール: `web-lab-web-ec2-role`
-- ユーザーデータ: [uesr-data.sh](./user-data.sh) ([02-cloudformation](../02-cloudformation/01-prerequisites.md)から作成したParameterから値を取得)
+- ユーザーデータ: [uesr-data.sh](./user-data.sh) ([02-cloudformation](../02-cloudformation/01-prerequisites.md)で作成したParameterから値を取得)
 
