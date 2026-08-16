@@ -31,3 +31,15 @@ Auto Scaling Group `web-lab-auto-scaling-group` を以下の設定で作成ま�
 
 ![Auto Scaling Group 1](./images/04-web-lab-auto-scaling-group-1.png)
 ![Auto Scaling Group 2](./images/04-web-lab-auto-scaling-group-2.png)
+
+## 動作確認
+
+インスタンスが2台起動し、ターゲットグループ `web-lab-tg` に登録されていることを確認しました。
+
+![Target Group Before 1](./images/04-web-lab-target-group-before-1.png)
+![Target Group Before 2](./images/04-web-lab-target-group-before-2.png)
+
+ウェブブラウザからALBのDNS名にアクセスし、ページを更新することで2台のEC2インスタンスのインスタンスIDがそれぞれ表示されることを確認しました。
+
+![Nginx Top A](./images/04-nginx-top-a.png)
+![Nginx Top B](./images/04-nginx-top-b.png)
