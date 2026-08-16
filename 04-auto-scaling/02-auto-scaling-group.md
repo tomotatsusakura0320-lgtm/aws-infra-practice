@@ -1,3 +1,4 @@
+
 ## 起動テンプレート作成
 
 起動テンプレート `web-lab-launch-template` を以下の設定で作成しました。
@@ -10,3 +11,4 @@
 - セキュリティグループ: `web-lab-web-sg`
 - IAMインスタンスプロフィール: `web-lab-web-ec2-role`
 - ユーザーデータ: [uesr-data.sh](./user-data.sh)
+
