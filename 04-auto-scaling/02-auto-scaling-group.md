@@ -9,4 +9,4 @@
 - アベイラビリティゾーン: ap-northeast-1a, ap-northeast-1c
 - セキュリティグループ: `web-lab-web-sg`
 - IAMインスタンスプロフィール: `web-lab-web-ec2-role`
-- ユーザーデータ: 
+- ユーザーデータ: (uesr-data.sh)
