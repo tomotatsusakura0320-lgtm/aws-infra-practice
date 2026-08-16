@@ -16,7 +16,7 @@ Webサーバ用セキュリティグループ `web-lab-web-sg` を作成し、HT
 
 ## IAMロール作成
 
-IAMロール ` web-lab-web-ec2-role` を作成し、ポリシー(`AmazonSSMManagedInstanceCore`,`CloudWatchAgentServerPolicy`)をアタッチしました。
+IAMロール `web-lab-web-ec2-role` を作成し、ポリシー `AmazonSSMManagedInstanceCore`,`CloudWatchAgentServerPolicy` をアタッチしました。
 
 ## ターゲットグループ作成
 
