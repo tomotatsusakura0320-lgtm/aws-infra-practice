@@ -10,7 +10,7 @@
 - セキュリティグループ: `web-lab-web-sg`
 - IAMインスタンスプロフィール: `web-lab-web-ec2-role`
 
-ユーザーデータ
+- ユーザーデータ
 ```bash
 #!/bin/bash
 
