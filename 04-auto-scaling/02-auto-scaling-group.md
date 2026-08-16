@@ -29,5 +29,5 @@ Auto Scaling Group `web-lab-auto-scaling-group` を以下の設定で作成ま�
 - Cloudwatch内でのグループメトリクスの収集を有効にする: オン
 - タグ: Name: `web-lab-web-ec2`
 
-[Auto Scaling Group 1](./images/04-web-lab-auto-scaling-group-1)
-[Auto Scaling Group 2](./images/04-web-lab-auto-scaling-group-2)
+[Auto Scaling Group 1](./images/04-web-lab-auto-scaling-group-1.png)
+[Auto Scaling Group 2](./images/04-web-lab-auto-scaling-group-2.png)
