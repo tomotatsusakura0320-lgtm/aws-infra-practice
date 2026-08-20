@@ -14,7 +14,7 @@ ECSクラスター `web-lab-ecs-fargate` を作成しました。
 - CPU: 0.25 vCPU
 - メモリ: 0.5 GB
 - ロググループの自動作成: オン
-- ロググループ: /web-lab/ecs-fargate
+- ロググループ名: /web-lab/ecs-fargate
 
 ![タスク定義１](./images/05-task-definition-1.png)
 ![タスク定義２](./images/05-task-definition-2.png)
