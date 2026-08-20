@@ -22,5 +22,6 @@ docker build -t ecs-fargate-web:latest .
 ```bash
 docker run -d -p 8080:80 --name ecs-fargate-web ecs-fargate-web:latest
 ```
+その後ブラウザから `http://localhost:8080` にアクセスし、entrypoint.shによって生成されたWebページとコンテナのホスト名が表示されることを確認しました。
 
-その後ブラウザから `http://localhost:8080` へアクセスし、以下のように
+![webページ（ローカルコンテナ）](./images/05-docker-local.png)
