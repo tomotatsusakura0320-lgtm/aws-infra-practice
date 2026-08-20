@@ -10,7 +10,9 @@ ECRへログイン後、DockerイメージにECR用のタグを付与し、Amazo
 
 ```bash
 aws ecr get-login-password --region ap-northeast-1 | docker login --username AWS --password-stdin <AWSアカウントID>.dkr.ecr.ap-northeast-1.amazonaws.com
+
 docker tag ecs-fargate-web:latest <AWSアカウントID>.dkr.ecr.ap-northeast-1.amazonaws.com/web-lab-ecs-fargate-web:latest
+
 docker push <AWSアカウントID>.dkr.ecr.ap-northeast-1.amazonaws.com/web-lab-ecs-fargate-web:latest
 ```
 
