@@ -14,3 +14,13 @@ ECS Fargateで実行するWebコンテナを作成するため、Nginxをベー�
 docker build -t ecs-fargate-web:latest .
 ```
 その後 `docker images` コマンドを使用し `ecs-fargate-web` が存在することを確認しました。
+
+## ローカルで動作確認
+
+以下のコマンドを実行してコンテナを起動しました。
+
+```bash
+docker run -d -p 8080:80 --name ecs-fargate-web ecs-fargate-web:latest
+```
+
+その後ブラウザから `http://localhost:8080` へアクセスし、以下のように
