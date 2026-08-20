@@ -15,7 +15,7 @@ docker tag ecs-fargate-web:latest <AWSアカウントID>.dkr.ecr.ap-northeast-1.
 
 docker push <AWSアカウントID>.dkr.ecr.ap-northeast-1.amazonaws.com/web-lab-ecs-fargate-web:latest
 ```
-
+---
 AWSコンソールで、 `web-lab-ecs-fargate-web` にイメージが追加されていることを確認しました。
 
 ![Dockerイメージ](./images/05-ecr-image.png)
