@@ -2,7 +2,7 @@
 
 ECRリポジトリ `web-lab-ecs-fargate-web` を作成しました。
 
-[リポジトリ](./images/05-ecr-repository.png)
+![リポジトリ](./images/05-ecr-repository.png)
 
 ## DockerイメージをECRへPush
 
