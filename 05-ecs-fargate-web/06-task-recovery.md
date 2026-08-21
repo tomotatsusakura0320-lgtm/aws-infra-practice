@@ -2,4 +2,11 @@
 
 タスクを1つ停止した後、自動的に新しいタスクが1つ起動し、タスク数が2つに維持されることを確認しました。
 
-![タスク停止](./images/05-web-lab-ecs-fargate-service.png)
+![タスク停止](./images/05-web-lab-ecs-fargate-service-2.png)
+![新タスク起動](./images/05-web-lab-ecs-fargate-service-3.png)
+
+---
+その後、ターゲットグループに新しいタスクが登録されていることを確認し、ブラウザからアクセスした際に、新たに起動したタスクのホスト名やIPアドレスが表示されることを確認しました。
+
+![新タスク起動後ターゲットグループ](./images/05-web-lab-tg-ecs-fargate-2-after.png)
+![新タスク起動後ブラウザ確認](./images/05-alb-web-3.png)
