@@ -12,7 +12,7 @@ ECSサービス `web-lab-ecs-fargate-service` を以下の設定で作成しま�
 - ロードバランサー: ALB `web-lab-alb`
 - リスナーポート番号: 80
 - リスナープロトコル: HTTP
-- ターゲットグループ: `web-labtg-ecs-fargate`
+- ターゲットグループ: `web-lab-tg-ecs-fargate`
 
 ![サービス概要](./images/05-web-lab-ecs-fargate-service-1.png)
 
