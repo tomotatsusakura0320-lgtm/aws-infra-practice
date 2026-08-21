@@ -2,4 +2,4 @@
 
 タスクを1つ停止した後、自動的に新しいタスクが1つ起動し、タスク数が2つに維持されることを確認しました。
 
-![タスク停止](./images/05-web-lab-ecs-fargate-service)
+![タスク停止](./images/05-web-lab-ecs-fargate-service.png)
