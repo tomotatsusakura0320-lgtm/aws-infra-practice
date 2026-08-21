@@ -14,14 +14,14 @@ ECSサービス `web-lab-ecs-fargate-service` を以下の設定で作成しま�
 - リスナープロトコル: HTTP
 - ターゲットグループ: `web-labtg-ecs-fargate`
 
-![サービス概要](./inages/05-web-lab-ecs-fargate-service-1.png)
+![サービス概要](./images/05-web-lab-ecs-fargate-service-1.png)
 
 ## ECSサービス確認
 
 ECSサービス起動後、ターゲットグループに2つのターゲットが登録されていることを確認しました。
 
-![ターゲットグループ１](./inages/05-web-lab-tg-ecs-fargate-1.png)
-![ターゲットグループ２](./inages/05-web-lab-tg-ecs-fargate-2.png)
+![ターゲットグループ１](./images/05-web-lab-tg-ecs-fargate-1.png)
+![ターゲットグループ２](./images/05-web-lab-tg-ecs-fargate-2.png)
 
 ロードバランサーのDNS名にブラウザからアクセスし、ページをリロードすることで、各タスクのホスト名とIPアドレスが表示されることを確認しました。
 
