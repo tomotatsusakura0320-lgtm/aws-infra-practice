@@ -22,3 +22,21 @@ SSMからEC2インスタンスに接続後、MySQLクライアントをインス
 sudo dnf install mariadb105 -y
 mysql -h <RDSエンドポイント> -P 3306 -u <ユーザー名> -p
 ```
+
+## テーブルの作成
+`users` テーブルを作成し、作成したデータを取得できることを確認しました。
+
+```sql
+USE testdb;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(255)
+);
+
+INSERT INTO users (name, email)
+VALUES ('Taro', 'taro@example.com');
+
+SELECT * FROM users;
+```
