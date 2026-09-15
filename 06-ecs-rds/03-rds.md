@@ -42,3 +42,4 @@ VALUES ('Taro', 'taro@example.com');
 
 SELECT * FROM users;
 ```
+![MySQL](./images/06-mysql-test.png)
