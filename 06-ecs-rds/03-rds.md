@@ -35,6 +35,8 @@ CREATE TABLE users (
     email VARCHAR(255)
 );
 
+![MySQL](./images/06-mysql-test.png)
+
 INSERT INTO users (name, email)
 VALUES ('Taro', 'taro@example.com');
 
