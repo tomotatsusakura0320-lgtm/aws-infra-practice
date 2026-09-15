@@ -1,0 +1,17 @@
+## ECSサービス作成
+
+ECSクラスター`ecs-rds-lab-cluster`を作成した後、ECSサービス `ecs-rds-lab-task-service` を以下の設定で作成しました。
+- タスク定義ファミリー: `ecs-rds-lab-task`
+- タスク定義のリビジョン: 1
+- 起動タイプ: Fargate
+- 必要なタスク: 2
+- VPC: `web-lab-vpc`
+- サブネット: `ecs-rds-lab-private-ecs-subnet-a`, `ecs-rds-lab-private-ecs-subnet-c`
+- セキュリティグループ: `ecs-rds-lab-ecs-sg`
+- パブリックIP: オフ
+- ロードバランサー: ALB `ecs-rds-lab-alb`
+- リスナーポート番号: 5000
+- リスナープロトコル: HTTP
+- ターゲットグループ: `ecs-rds-lab-tg`
+
+![サービス概要](./images/06-ecs-rds-lab-cluster.png)
