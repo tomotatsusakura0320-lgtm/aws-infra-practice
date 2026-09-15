@@ -1,6 +1,6 @@
 ## 各ファイルの作成
 今回の構成に必要な3つのファイルと、localでの動作確認のために必要な1つのファイルを作成しました。
-- [Dockerfile](./Dockerfile):Flaskアプリケーション用Dockerイメージの定義
+- [Dockerfile](./Dockerfile): Flaskアプリケーション用Dockerイメージの定義
 
 
 
