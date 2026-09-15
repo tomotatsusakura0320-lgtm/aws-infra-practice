@@ -1,26 +1,24 @@
-## RDSサブネットグループ作成
-サブネットグループを作成しました。
-
-![サブネットグループ](./images/03-rds-lab-subnet-group.png)
-
 ## RDS作成
-RDSを作成しました。
+サブネットグループとRDSを作成しました。
 
-![RDS1](./images/03-rds-lab-rds.png)
-![RDS2](./images/03-rds-lab-rds-1.png)
+![RDS1](./images/06-ecs-rds-lab-db-1.png)
+![RDS2](./images/06-ecs-rds-lab-db-2.png)
 
 ## Secretの作成
-RDSへの接続情報をSecrets Managerで管理し、ECS Taskから取得してDB接続に利用するため、以下のキーと値をSecretに保存しました。
-なお、値についてはセキュリティ上の理由から記載していません。
-
-- DB_HOST
-- DB_PORT
-- DB_NAME
-- DB_USER
-- DB_PASSWORD
+RDSへの接続情報をSecrets Managerで管理し、ECS Taskから取得してDB接続に利用するため、Secret `ecs-rds-lab-db-secret` を作成しました。
+なお、一部の値についてはセキュリティ上の理由から記載していません。
+![シークレット1](./images/06-ecs-rds-lab-db-secret-1.png)
+![シークレット2](./images/06-ecs-rds-lab-db-secret-2.png)
 
 
 ## EC2インスタンスから接続
 `ecs-rds-lab-public-subnet-a` 上にEC2インスタンスを作成しました。
+
 `ecs-rds-lab-rds-sg` にEC2インスタンスにアタッチしたセキュリティグループからの通信を許可するインバウンドルールを追加しました。
 
+SSMからEC2インスタンスに接続後、MySQLクライアントをインストールし、RDSにログインしました。
+
+```bash
+sudo dnf install mariadb105 -y
+mysql -h <RDSエンドポイント> -P 3306 -u <ユーザー名> -p
+```
