@@ -28,4 +28,4 @@ docker push <AWSアカウントID>.dkr.ecr.ap-northeast-1.amazonaws.com/ecs-rds-
 ---
 AWSコンソールで、 `ecs-rds-lab-app` にイメージが追加されていることを確認しました。
 
-![Dockerイメージ](./images/06-ecs-rds-lab-app)
+![Dockerイメージ](./images/06-ecs-rds-lab-app.png)
