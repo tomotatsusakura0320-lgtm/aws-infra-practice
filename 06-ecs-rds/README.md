@@ -1,0 +1,9 @@
+# Amazon ECS FargateとAmazon RDSを利用したコンテナWebシステムの構築
+
+## 概要
+
+AWS上にAmazon ECS FargateとAmazon RDS for MySQLを利用したコンテナWebシステムを構築しました。
+
+DockerでFlaskアプリケーションをコンテナ化し、Amazon ECRに登録したDockerイメージをECS Fargate上で実行しました。また、Application Load Balancer（ALB）をECS Serviceと連携し、Public Subnet上のALBからPrivate Subnet上の複数のTaskへリクエストを転送する構成としました。
+
+さらに、ECS Fargate上のFlaskアプリケーションからPrivate Subnet上のRDS MySQLへ接続し、データベースから取得したデータをブラウザに表示できることを確認しました。DB接続情報にはSecrets Managerを利用し、CloudWatch Logsによるログ確認を行いました。
