@@ -16,8 +16,12 @@
 
 ![サービス概要](./images/06-ecs-rds-lab-cluster.png)
 
-##サービス起動確認
+## サービス起動確認
 `ecs-rds-lab-task-service` を起動し、`ecs-rds-lab-tg` に2つのターゲットが正常に登録されていることを確認しました。
 
 ![ターゲットグループ1](./images/06-ecs-rds-lab-tg-1.png)
 ![ターゲットグループ2](./images/06-ecs-rds-lab-tg-2.png)
+
+ALBのDNS名でブラウザからアクセスし、RDSにアップロードした内容が表示されることを確認しました。
+
+![ブラウザ](./images/06-ecs-rds-lab-browser.png)
