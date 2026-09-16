@@ -1,6 +1,6 @@
 ## ECSサービス作成
 
-ECSクラスター`ecs-rds-lab-cluster`を作成した後、ECSサービス `ecs-rds-lab-task-service` を以下の設定で作成しました。
+タスク定義及びECSクラスター`ecs-rds-lab-cluster`を作成した後、ECSサービス `ecs-rds-lab-task-service` を以下の設定で作成しました。
 - タスク定義ファミリー: `ecs-rds-lab-task`
 - タスク定義のリビジョン: 1
 - 起動タイプ: Fargate
@@ -15,3 +15,9 @@ ECSクラスター`ecs-rds-lab-cluster`を作成した後、ECSサービス `ecs
 - ターゲットグループ: `ecs-rds-lab-tg`
 
 ![サービス概要](./images/06-ecs-rds-lab-cluster.png)
+
+##サービス起動確認
+`ecs-rds-lab-task-service` を起動し、`ecs-rds-lab-tg` に2つのターゲットが正常に登録されていることを確認しました。
+
+![ターゲットグループ1](./images/06-ecs-rds-lab-tg-1.png)
+![ターゲットグループ2](./images/06-ecs-rds-lab-tg-2.png)
