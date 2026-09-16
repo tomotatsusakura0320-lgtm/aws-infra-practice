@@ -25,3 +25,8 @@
 ALBのDNS名でブラウザからアクセスし、RDSにアップロードした内容が表示されることを確認しました。
 
 ![ブラウザ](./images/06-ecs-rds-lab-browser.png)
+
+## ログ確認
+ECSタスクのログが正常に表示されることを確認しました。
+
+![ログ](./images/06-ecs-rds-lab-logs.png)
