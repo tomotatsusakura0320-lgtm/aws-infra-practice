@@ -20,7 +20,7 @@ Dockerでnginxをコンテナ化し、Amazon ECRに登録したDockerイメー�
 - [02. ローカルでの動作確認](02-local.md)
 - [03. ECSクラスター・タスク定義作成](03-cluster.md)
 - [04. ECRリポジトリ作成](04-ecr.md)
-- [05.ECSサービス作成・確認](05-ecs.md)
+- [05. ECSサービス作成・確認](05-ecs.md)
 - [06. 自動復旧確認](06-task-recovery.md)
 - [07. CloudWatchログ確認](07-cloudwatch.md)
 - [08. リソース削除](08-cleanup.md)
