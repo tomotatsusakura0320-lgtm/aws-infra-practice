@@ -5,7 +5,7 @@
 - タスク定義のリビジョン: 1
 - 起動タイプ: Fargate
 - 必要なタスク: 2
-- VPC: `web-lab-vpc`
+- VPC: `ecs-rds-lab-vpc`
 - サブネット: `ecs-rds-lab-private-ecs-subnet-a`, `ecs-rds-lab-private-ecs-subnet-c`
 - セキュリティグループ: `ecs-rds-lab-ecs-sg`
 - パブリックIP: オフ
