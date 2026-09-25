@@ -1,14 +1,5 @@
 # ALBを利用した高可用性Webシステムの構築
 
-## 内容
-- [01. ネットワーク構築](01-network.md)
-- [02. EC2・IAMロール](02-ec2.md)
-- [03. ALB・ターゲットグループ](03-alb.md)
-- [04. SSM・Nginx・CloudWatch Agent](04-ssm-nginx-cloudwatch.md)
-- [05. CloudWatch監視](05-cloudwatch-monitoring.md)
-- [06. 動作確認](06-verification.md)
-- [07. リソース削除](07-cleanup.md)
-
 ## 概要
 AWS上に高可用性を意識したWebサーバ環境を構築しました。
 
