@@ -12,7 +12,7 @@ CloudWatch Agentの設定はSystems Manager Parameter Storeから取得し、Web
 
 ## 構築手順
 
-- [01. 事前準備](./01-prerequisites.md)
-- [02. CloudFormationテンプレート](./02-cloudformation-template.md)
-- [03. デプロイ・動作確認](./03-deploy-verification.md)
-- [04. リソース削除](./04-cleanup.md)
+- [01. 事前準備](01-prerequisites.md)
+- [02. CloudFormationテンプレート](02-template.md)
+- [03. デプロイ・動作確認](03-verification.md)
+- [04. リソース削除](04-cleanup.md)
