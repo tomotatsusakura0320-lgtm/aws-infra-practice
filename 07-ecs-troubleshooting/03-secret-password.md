@@ -22,7 +22,7 @@ Cloudwatch Logs でログを確認しました。
 Secrets Manager の `DB_PASSWORD` を正しい値に戻し、再デプロイしました。
 
 ---
-ヘルスステータスがhealthyになっていることを確認しました。
+ヘルスステータスが**healthy**になっていることを確認しました。
 ![ターゲットグループ1after](./images/07-03-ecs-rds-lab-tg-1-after.png)
 ![ターゲットグループ2after](./images/07-03-ecs-rds-lab-tg-2-after.png)
 
