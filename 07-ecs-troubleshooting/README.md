@@ -7,4 +7,4 @@
 
 ## 構成図
 
-![構成図](../images/06-kouseizu.png)
+![構成図](../06-ecs-rds/images/06-kouseizu.png)
