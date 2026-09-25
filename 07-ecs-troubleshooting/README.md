@@ -5,12 +5,10 @@
 
 障害発生後、AWSコンソールで各リソースの状態を確認し、CloudWatch Logsなどから得られる情報をもとに原因を調査・特定し、復旧までの一連の障害対応を実践しました。
 
-## 構成図
-
-![構成図](../06-ecs-rds/images/06-kouseizu.png)
-
-## トラブルシューティング
-
 - [01. ECRのイメージタグを意図的に間違えて、ECSの起動失敗を確認する](01-imagetag.md)
 - [02. ALBのヘルスチェックパスを意図的に変更して、ECSタスクのUnhealthyを確認する](02-healthcheckpath.md)
 - [03. Secretに保存しているパスワードの値を変更し、DB接続エラーを発生させる](03-secret-password.md)
+
+## 構成図
+
+![構成図](../06-ecs-rds/images/06-kouseizu.png)
