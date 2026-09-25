@@ -12,6 +12,6 @@
 ## トラブルシューティング
 
 - [01. ECRのイメージタグを意図的に間違えて、ECSの起動失敗を確認する](01-imagetag.md)
-- [02. ヘルスチェックパスの誤設定](02-healthcheckpath.md)
+- [02. ALBのヘルスチェックパスを意図的に変更して、ECSタスクのUnhealthyを確認する](02-healthcheckpath.md)
 - [03. シークレットに保存したパスワードの誤設定](03-secret-password.md)
 - [04. ECSの作成・動作確認](04-ecs.md)
