@@ -10,12 +10,6 @@ Dockerでnginxをコンテナ化し、Amazon ECRに登録したDockerイメー�
 
 さらに、Amazon CloudWatch Logsを利用してコンテナのログを収集・確認しました。
 
-## 構成図
-
-![構成図](./images/05-kouseizu.png)
-
-## 構築手順
-
 - [01. ネットワーク・ALB構築](01-network-alb.md)
 - [02. ローカルでの動作確認](02-local.md)
 - [03. ECSクラスター・タスク定義作成](03-cluster.md)
@@ -25,3 +19,6 @@ Dockerでnginxをコンテナ化し、Amazon ECRに登録したDockerイメー�
 - [07. CloudWatchログ確認](07-cloudwatch.md)
 - [08. リソース削除](08-cleanup.md)
 
+## 構成図
+
+![構成図](./images/05-kouseizu.png)
