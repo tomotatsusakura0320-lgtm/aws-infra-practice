@@ -18,7 +18,7 @@ Systems Manager Session Manager(SSM)を利用して管理を行いました。
 - [01. ネットワーク構築](01-network.md)
 - [02. EC2・IAMロール](02-ec2.md)
 - [03. ALB・ターゲットグループ](03-alb.md)
-- [04. SSM・Nginx・CloudWatch Agent](04-ssm-nginx-cloudwatch-agent.md)
+- [04. SSM・Nginx・CloudWatch Agent](04-ssm-nginx-cloudwatch.md)
 - [05. CloudWatch監視](05-cloudwatch-monitoring.md)
 - [06. 動作確認](06-verification.md)
 - [07. リソース削除](07-cleanup.md)
