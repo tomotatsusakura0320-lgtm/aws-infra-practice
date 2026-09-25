@@ -10,13 +10,6 @@ EC2からRDSへ接続できる構成を作成し、Security GroupによってRDS
 
 さらに、RDSのSnapshotによるバックアップとリストア、DB Parameter Groupによるデータベース設定の変更、AWS Secrets ManagerとIAM Roleを利用したデータベース認証情報の管理を実施しました。
 
-
-## 構成図
-
-![構成図](./images/03-kouseizu.png)
-
-## 構築手順
-
 - [01. ネットワーク・EC2構築](01-network-ec2.md)
 - [02. RDS](02-rds.md)
 - [03. スナップショットを利用した復元](03-snapshot.md)
@@ -24,3 +17,6 @@ EC2からRDSへ接続できる構成を作成し、Security GroupによってRDS
 - [05. Secret作成](05-secrets-manager.md)
 - [06. リソース削除](06-cleanup.md)
 
+## 構成図
+
+![構成図](./images/03-kouseizu.png)
