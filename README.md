@@ -5,7 +5,7 @@
 AWSを利用したインフラ構築の学習記録です。
 
 ## 内容
-- [01. ALBを利用した高可用性Webシステムの構築](./01-alb)
+- [01. ALBを利用した高可用性Webシステムの構築](./01-alb/README.md)
 - [02. CloudFormationによるALBを利用した高可用性Webシステムの構築](./02-cloudformation)
 - [03. Amazon RDSを利用したデータベース環境の構築](./03-rds)
 - [04. Amazon EC2 Auto Scalingを利用したスケーリング環境の構築](./04-auto-scaling)
