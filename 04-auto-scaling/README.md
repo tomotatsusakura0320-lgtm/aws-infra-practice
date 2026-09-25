@@ -10,13 +10,11 @@ AWS上にApplication Load Balancer（ALB）とAmazon EC2 Auto Scalingを利用�
 
 さらに、Amazon SNSを利用したアラーム通知を設定し、CPU負荷を発生させることでスケールアウト・スケールインの動作を検証しました。
 
-## 構成図
-
-![構成図](./images/04-kouseizu.png)
-
-## 構築手順
-
 - [01. ネットワーク・ALB構築](01-network-alb.md)
 - [02. Auto Scaling Group作成](02-auto-scaling-group.md)
 - [03. CloudWatch Alarm・Auto Scaling Groupの作成と動作検証](03-cloudwatch-alarm.md)
 - [04. リソース削除](04-cleanup.md)
+
+## 構成図
+
+![構成図](./images/04-kouseizu.png)
